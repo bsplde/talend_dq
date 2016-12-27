@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_CWH4oMx-Eea2Ze65m8OESQ" name="Redshift_EDW" id="_gCX7kMx9Eea2Ze65m8OESQ" label="Redshift_EDW" dataPackage="_g4iSGsx-Eea2Ze65m8OESQ" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_CWH4ocx-Eea2Ze65m8OESQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_CcipsMx-Eea2Ze65m8OESQ" tag="package filter" value=""/>
@@ -15,7 +15,160 @@
     <parameters xmi:id="_CWH4osx-Eea2Ze65m8OESQ" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_g4iSGsx-Eea2Ze65m8OESQ" name="edw" dataManager="_CWH4oMx-Eea2Ze65m8OESQ">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSG8x-Eea2Ze65m8OESQ" name="asap_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSG8x-Eea2Ze65m8OESQ" name="asap_stg">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhUsx-Eea2Ze65m8OESQ" name="army_chess_raw" id="_rfozoMx-Eea2Ze65m8OESQ" label="army_chess_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhU8x-Eea2Ze65m8OESQ" name="army_chess_vend_cont_xref" id="_rfpasMx-Eea2Ze65m8OESQ" label="army_chess_vend_cont_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhVMx-Eea2Ze65m8OESQ" name="asap_address_raw" id="_rfpascx-Eea2Ze65m8OESQ" label="asap_address_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhVcx-Eea2Ze65m8OESQ" name="asap_adv_order_identity_raw" id="_rfpassx-Eea2Ze65m8OESQ" label="asap_adv_order_identity_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhVsx-Eea2Ze65m8OESQ" name="asap_agency_lookup_raw" id="_rfpas8x-Eea2Ze65m8OESQ" label="asap_agency_lookup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhV8x-Eea2Ze65m8OESQ" name="asap_contract_raw" id="_rfpatMx-Eea2Ze65m8OESQ" label="asap_contract_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhWMx-Eea2Ze65m8OESQ" name="asap_day_raw" id="_rfpatcx-Eea2Ze65m8OESQ" label="asap_day_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhWcx-Eea2Ze65m8OESQ" name="asap_lineitem_raw" id="_rfpatsx-Eea2Ze65m8OESQ" label="asap_lineitem_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhWsx-Eea2Ze65m8OESQ" name="asap_product_raw" id="_rfpat8x-Eea2Ze65m8OESQ" label="asap_product_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhW8x-Eea2Ze65m8OESQ" name="asap_purchase_raw" id="_rfpauMx-Eea2Ze65m8OESQ" label="asap_purchase_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhXMx-Eea2Ze65m8OESQ" name="asap_shopper_raw" id="_rfpaucx-Eea2Ze65m8OESQ" label="asap_shopper_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhXcx-Eea2Ze65m8OESQ" name="asap_vendor_raw" id="_rfpausx-Eea2Ze65m8OESQ" label="asap_vendor_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhXsx-Eea2Ze65m8OESQ" name="cp_dds_agency_names" id="_rfpau8x-Eea2Ze65m8OESQ" label="cp_dds_agency_names" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhX8x-Eea2Ze65m8OESQ" name="dds_fedex_charge_lkup_raw" id="_rfpavMx-Eea2Ze65m8OESQ" label="dds_fedex_charge_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhYMx-Eea2Ze65m8OESQ" name="dds_fedex_container_lkup_raw" id="_rfpavcx-Eea2Ze65m8OESQ" label="dds_fedex_container_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhYcx-Eea2Ze65m8OESQ" name="dds_fedex_cust_mas_lkup_raw" id="_rfqBwMx-Eea2Ze65m8OESQ" label="dds_fedex_cust_mas_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhYsx-Eea2Ze65m8OESQ" name="dds_fedex_detail_raw" id="_rfqBwcx-Eea2Ze65m8OESQ" label="dds_fedex_detail_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhY8x-Eea2Ze65m8OESQ" name="dds_fedex_pkg_type_lkup_raw" id="_rfqBwsx-Eea2Ze65m8OESQ" label="dds_fedex_pkg_type_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhZMx-Eea2Ze65m8OESQ" name="dds_fedex_surchrg_raw" id="_rfqBw8x-Eea2Ze65m8OESQ" label="dds_fedex_surchrg_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhZcx-Eea2Ze65m8OESQ" name="dds_fedex_svc_type_lkup" id="_rfqBxMx-Eea2Ze65m8OESQ" label="dds_fedex_svc_type_lkup" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhZsx-Eea2Ze65m8OESQ" name="dds_ups_bill_opt_lkup_raw" id="_rfqBxcx-Eea2Ze65m8OESQ" label="dds_ups_bill_opt_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhZ8x-Eea2Ze65m8OESQ" name="dds_ups_chrg_cat_lkup_raw" id="_rfqBxsx-Eea2Ze65m8OESQ" label="dds_ups_chrg_cat_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhaMx-Eea2Ze65m8OESQ" name="dds_ups_chrg_src_lkup_raw" id="_rfqBx8x-Eea2Ze65m8OESQ" label="dds_ups_chrg_src_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhacx-Eea2Ze65m8OESQ" name="dds_ups_chrg_tbl_lkup_raw" id="_rfqByMx-Eea2Ze65m8OESQ" label="dds_ups_chrg_tbl_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhasx-Eea2Ze65m8OESQ" name="dds_ups_container_lkup_raw" id="_rfqBycx-Eea2Ze65m8OESQ" label="dds_ups_container_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvha8x-Eea2Ze65m8OESQ" name="dds_ups_customer_raw" id="_rfqBysx-Eea2Ze65m8OESQ" label="dds_ups_customer_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhbMx-Eea2Ze65m8OESQ" name="dds_ups_detail_raw" id="_rfqBy8x-Eea2Ze65m8OESQ" label="dds_ups_detail_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhbcx-Eea2Ze65m8OESQ" name="dds_ups_dvry_reason_lkup_raw" id="_rfqBzMx-Eea2Ze65m8OESQ" label="dds_ups_dvry_reason_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhbsx-Eea2Ze65m8OESQ" name="dds_ups_ontime_excep_lkup_raw" id="_rfqBzcx-Eea2Ze65m8OESQ" label="dds_ups_ontime_excep_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhb8x-Eea2Ze65m8OESQ" name="dds_ups_service_raw" id="_rfqBzsx-Eea2Ze65m8OESQ" label="dds_ups_service_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhcMx-Eea2Ze65m8OESQ" name="dds_ups_surcharge_raw" id="_rfqBz8x-Eea2Ze65m8OESQ" label="dds_ups_surcharge_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhccx-Eea2Ze65m8OESQ" name="fpds_aac_count_raw" id="_rfqB0Mx-Eea2Ze65m8OESQ" label="fpds_aac_count_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhcsx-Eea2Ze65m8OESQ" name="fpds_aac_raw" id="_rfqB0cx-Eea2Ze65m8OESQ" label="fpds_aac_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhc8x-Eea2Ze65m8OESQ" name="fpds_award_count_raw" id="_rfqB0sx-Eea2Ze65m8OESQ" label="fpds_award_count_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhdMx-Eea2Ze65m8OESQ" name="fpds_award_raw" id="_rfqB08x-Eea2Ze65m8OESQ" label="fpds_award_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhdcx-Eea2Ze65m8OESQ" name="fpds_delete_count_raw" id="_rfqo0Mx-Eea2Ze65m8OESQ" label="fpds_delete_count_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhdsx-Eea2Ze65m8OESQ" name="fpds_delete_raw" id="_rfqo0cx-Eea2Ze65m8OESQ" label="fpds_delete_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhd8x-Eea2Ze65m8OESQ" name="fpds_idv_count_raw" id="_rfqo0sx-Eea2Ze65m8OESQ" label="fpds_idv_count_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvheMx-Eea2Ze65m8OESQ" name="fpds_idv_raw" id="_rfqo08x-Eea2Ze65m8OESQ" label="fpds_idv_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhecx-Eea2Ze65m8OESQ" name="fpds_missing_awards" id="_rfrP4Mx-Eea2Ze65m8OESQ" label="fpds_missing_awards" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhesx-Eea2Ze65m8OESQ" name="fpds_missing_idv" id="_rfrP4cx-Eea2Ze65m8OESQ" label="fpds_missing_idv" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhe8x-Eea2Ze65m8OESQ" name="fpds_office_count_raw" id="_rfrP4sx-Eea2Ze65m8OESQ" label="fpds_office_count_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhfMx-Eea2Ze65m8OESQ" name="fpds_office_raw" id="_rfrP48x-Eea2Ze65m8OESQ" label="fpds_office_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhfcx-Eea2Ze65m8OESQ" name="fss19_caf_raw" id="_rfrP5Mx-Eea2Ze65m8OESQ" label="fss19_caf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhfsx-Eea2Ze65m8OESQ" name="fss19_caf_transform_raw" id="_rfrP5cx-Eea2Ze65m8OESQ" label="fss19_caf_transform_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhf8x-Eea2Ze65m8OESQ" name="fss19_cff_raw" id="_rfrP5sx-Eea2Ze65m8OESQ" label="fss19_cff_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhgMx-Eea2Ze65m8OESQ" name="fss19_cmf_raw" id="_rfrP58x-Eea2Ze65m8OESQ" label="fss19_cmf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhgcx-Eea2Ze65m8OESQ" name="fss19_crhf_raw" id="_rfrP6Mx-Eea2Ze65m8OESQ" label="fss19_crhf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhgsx-Eea2Ze65m8OESQ" name="fss19_ndf_raw" id="_rfrP6cx-Eea2Ze65m8OESQ" label="fss19_ndf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhg8x-Eea2Ze65m8OESQ" name="fss19_popi_raw" id="_rfrP6sx-Eea2Ze65m8OESQ" label="fss19_popi_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhhMx-Eea2Ze65m8OESQ" name="fss19_urhf_raw" id="_rfrP68x-Eea2Ze65m8OESQ" label="fss19_urhf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhhcx-Eea2Ze65m8OESQ" name="fss19_vaf_raw" id="_rfrP7Mx-Eea2Ze65m8OESQ" label="fss19_vaf_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhhsx-Eea2Ze65m8OESQ" name="fssi_baseline_mrc_lkup" id="_rfrP7cx-Eea2Ze65m8OESQ" label="fssi_baseline_mrc_lkup" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhh8x-Eea2Ze65m8OESQ" name="fssi_clin1_cleansing_lkup" id="_rfrP7sx-Eea2Ze65m8OESQ" label="fssi_clin1_cleansing_lkup" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhiMx-Eea2Ze65m8OESQ" name="fssi_clin2_cleansing_lkup" id="_rfr28Mx-Eea2Ze65m8OESQ" label="fssi_clin2_cleansing_lkup" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhicx-Eea2Ze65m8OESQ" name="fssi_data_quality" id="_rfr28cx-Eea2Ze65m8OESQ" label="fssi_data_quality" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhisx-Eea2Ze65m8OESQ" name="fssi_datamanagement_log" id="_rfr28sx-Eea2Ze65m8OESQ" label="fssi_datamanagement_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhi8x-Eea2Ze65m8OESQ" name="fssi_dds_raw" id="_rfr288x-Eea2Ze65m8OESQ" label="fssi_dds_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhjMx-Eea2Ze65m8OESQ" name="fssi_jansan_raw" id="_rfr29Mx-Eea2Ze65m8OESQ" label="fssi_jansan_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhjcx-Eea2Ze65m8OESQ" name="fssi_load_status" id="_rfr29cx-Eea2Ze65m8OESQ" label="fssi_load_status" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfvhjsx-Eea2Ze65m8OESQ" name="fssi_mro_raw" id="_rfr29sx-Eea2Ze65m8OESQ" label="fssi_mro_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIYMx-Eea2Ze65m8OESQ" name="fssi_os3_raw" id="_rfr298x-Eea2Ze65m8OESQ" label="fssi_os3_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIYcx-Eea2Ze65m8OESQ" name="fssi_pm_raw" id="_rfr2-Mx-Eea2Ze65m8OESQ" label="fssi_pm_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIYsx-Eea2Ze65m8OESQ" name="fssi_wireless_raw" id="_rfr2-cx-Eea2Ze65m8OESQ" label="fssi_wireless_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIY8x-Eea2Ze65m8OESQ" name="gwac_client_ord_support_raw" id="_rfr2-sx-Eea2Ze65m8OESQ" label="gwac_client_ord_support_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIZMx-Eea2Ze65m8OESQ" name="gwac_client_people_raw" id="_rfr2-8x-Eea2Ze65m8OESQ" label="gwac_client_people_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIZcx-Eea2Ze65m8OESQ" name="gwac_clients_raw" id="_rfr2_Mx-Eea2Ze65m8OESQ" label="gwac_clients_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIZsx-Eea2Ze65m8OESQ" name="gwac_contr_fam_func_area_raw" id="_rfr2_cx-Eea2Ze65m8OESQ" label="gwac_contr_fam_func_area_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIZ8x-Eea2Ze65m8OESQ" name="gwac_contract_families_raw" id="_rfr2_sx-Eea2Ze65m8OESQ" label="gwac_contract_families_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIaMx-Eea2Ze65m8OESQ" name="gwac_contracts_raw" id="_rfr2_8x-Eea2Ze65m8OESQ" label="gwac_contracts_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIacx-Eea2Ze65m8OESQ" name="gwac_fss_contracts_raw" id="_rfr3AMx-Eea2Ze65m8OESQ" label="gwac_fss_contracts_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIasx-Eea2Ze65m8OESQ" name="gwac_gwac_clin_types_raw" id="_rfr3Acx-Eea2Ze65m8OESQ" label="gwac_gwac_clin_types_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIa8x-Eea2Ze65m8OESQ" name="gwac_gwac_invoice_clins_raw" id="_rfr3Asx-Eea2Ze65m8OESQ" label="gwac_gwac_invoice_clins_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIbMx-Eea2Ze65m8OESQ" name="gwac_gwac_invoices_raw" id="_rfr3A8x-Eea2Ze65m8OESQ" label="gwac_gwac_invoices_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIbcx-Eea2Ze65m8OESQ" name="gwac_gwac_order_mods_raw" id="_rfr3BMx-Eea2Ze65m8OESQ" label="gwac_gwac_order_mods_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIbsx-Eea2Ze65m8OESQ" name="gwac_gwac_orders_raw" id="_rfr3Bcx-Eea2Ze65m8OESQ" label="gwac_gwac_orders_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIb8x-Eea2Ze65m8OESQ" name="gwac_industry_partners_raw" id="_rfseAMx-Eea2Ze65m8OESQ" label="gwac_industry_partners_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIcMx-Eea2Ze65m8OESQ" name="gwac_ip_people_raw" id="_rfseAcx-Eea2Ze65m8OESQ" label="gwac_ip_people_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIccx-Eea2Ze65m8OESQ" name="gwac_lu_award_type_raw" id="_rfseAsx-Eea2Ze65m8OESQ" label="gwac_lu_award_type_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIcsx-Eea2Ze65m8OESQ" name="gwac_lu_contr_type_raw" id="_rfseA8x-Eea2Ze65m8OESQ" label="gwac_lu_contr_type_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIc8x-Eea2Ze65m8OESQ" name="gwac_lu_federal_agency_raw" id="_rfseBMx-Eea2Ze65m8OESQ" label="gwac_lu_federal_agency_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIdMx-Eea2Ze65m8OESQ" name="gwac_lu_unit_raw" id="_rfseBcx-Eea2Ze65m8OESQ" label="gwac_lu_unit_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIdcx-Eea2Ze65m8OESQ" name="its_ra_agency_raw" id="_rfseBsx-Eea2Ze65m8OESQ" label="its_ra_agency_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIdsx-Eea2Ze65m8OESQ" name="its_ra_auction_detail_raw" id="_rfseB8x-Eea2Ze65m8OESQ" label="its_ra_auction_detail_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwId8x-Eea2Ze65m8OESQ" name="its_ra_auction_header_raw" id="_rfseCMx-Eea2Ze65m8OESQ" label="its_ra_auction_header_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIeMx-Eea2Ze65m8OESQ" name="its_ra_bureau_raw" id="_rfseCcx-Eea2Ze65m8OESQ" label="its_ra_bureau_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIecx-Eea2Ze65m8OESQ" name="its_ra_contracts_raw" id="_rfseCsx-Eea2Ze65m8OESQ" label="its_ra_contracts_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIesx-Eea2Ze65m8OESQ" name="its_ra_schedule_raw" id="_rfseC8x-Eea2Ze65m8OESQ" label="its_ra_schedule_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIe8x-Eea2Ze65m8OESQ" name="its_ra_schedule_type_raw" id="_rfseDMx-Eea2Ze65m8OESQ" label="its_ra_schedule_type_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIfMx-Eea2Ze65m8OESQ" name="its_ra_sin_raw" id="_rfseDcx-Eea2Ze65m8OESQ" label="its_ra_sin_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIfcx-Eea2Ze65m8OESQ" name="its_ra_uom_raw" id="_rfseDsx-Eea2Ze65m8OESQ" label="its_ra_uom_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIfsx-Eea2Ze65m8OESQ" name="its_ra_users_raw" id="_rfseD8x-Eea2Ze65m8OESQ" label="its_ra_users_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIf8x-Eea2Ze65m8OESQ" name="its_ra_usr_address_raw" id="_rfseEMx-Eea2Ze65m8OESQ" label="its_ra_usr_address_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIgMx-Eea2Ze65m8OESQ" name="its_ra_winningbid_raw" id="_rfseEcx-Eea2Ze65m8OESQ" label="its_ra_winningbid_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIgcx-Eea2Ze65m8OESQ" name="itss_accept_info_amt_raw" id="_rfseEsx-Eea2Ze65m8OESQ" label="itss_accept_info_amt_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIgsx-Eea2Ze65m8OESQ" name="itss_acceptance_info_raw" id="_rftFEMx-Eea2Ze65m8OESQ" label="itss_acceptance_info_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIg8x-Eea2Ze65m8OESQ" name="itss_address_raw" id="_rftFEcx-Eea2Ze65m8OESQ" label="itss_address_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIhMx-Eea2Ze65m8OESQ" name="itss_indurstry_partner_raw" id="_rftFEsx-Eea2Ze65m8OESQ" label="itss_indurstry_partner_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIhcx-Eea2Ze65m8OESQ" name="itss_invoice_detail_raw" id="_rftFE8x-Eea2Ze65m8OESQ" label="itss_invoice_detail_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIhsx-Eea2Ze65m8OESQ" name="itss_invoice_item_raw" id="_rftFFMx-Eea2Ze65m8OESQ" label="itss_invoice_item_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIh8x-Eea2Ze65m8OESQ" name="itss_invoice_raw" id="_rftFFcx-Eea2Ze65m8OESQ" label="itss_invoice_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIiMx-Eea2Ze65m8OESQ" name="itss_invoices_raw" id="_rftFFsx-Eea2Ze65m8OESQ" label="itss_invoices_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIicx-Eea2Ze65m8OESQ" name="itss_order_form_300s_raw" id="_rftFF8x-Eea2Ze65m8OESQ" label="itss_order_form_300s_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIisx-Eea2Ze65m8OESQ" name="itss_order_static_data_raw" id="_rftFGMx-Eea2Ze65m8OESQ" label="itss_order_static_data_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIi8x-Eea2Ze65m8OESQ" name="itss_order_status_raw" id="_rftFGcx-Eea2Ze65m8OESQ" label="itss_order_status_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIjMx-Eea2Ze65m8OESQ" name="itss_task_item_data_raw" id="_rftsIMx-Eea2Ze65m8OESQ" label="itss_task_item_data_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIjcx-Eea2Ze65m8OESQ" name="itswan_agenbureau_notinfmis" id="_rftsIcx-Eea2Ze65m8OESQ" label="itswan_agenbureau_notinfmis" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIjsx-Eea2Ze65m8OESQ" name="itswan_contract_supplier_xref" id="_rftsIsx-Eea2Ze65m8OESQ" label="itswan_contract_supplier_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIj8x-Eea2Ze65m8OESQ" name="itswan_fts_netwx_comb_raw" id="_rftsI8x-Eea2Ze65m8OESQ" label="itswan_fts_netwx_comb_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIkMx-Eea2Ze65m8OESQ" name="itswan_network_service_xref" id="_rftsJMx-Eea2Ze65m8OESQ" label="itswan_network_service_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIkcx-Eea2Ze65m8OESQ" name="itswan_networx_raw" id="_rftsJcx-Eea2Ze65m8OESQ" label="itswan_networx_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIksx-Eea2Ze65m8OESQ" name="mro_order_load_raw" id="_rftsJsx-Eea2Ze65m8OESQ" label="mro_order_load_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIk8x-Eea2Ze65m8OESQ" name="mro_product_load_raw" id="_rftsJ8x-Eea2Ze65m8OESQ" label="mro_product_load_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIlMx-Eea2Ze65m8OESQ" name="nitcp_contract_duns_xref" id="_rftsKMx-Eea2Ze65m8OESQ" label="nitcp_contract_duns_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIlcx-Eea2Ze65m8OESQ" name="nitcp_level3_dataset_raw" id="_rftsKcx-Eea2Ze65m8OESQ" label="nitcp_level3_dataset_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIlsx-Eea2Ze65m8OESQ" name="ordering_process_map_xref" id="_rftsKsx-Eea2Ze65m8OESQ" label="ordering_process_map_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIl8x-Eea2Ze65m8OESQ" name="os2_agency_map_raw" id="_rftsK8x-Eea2Ze65m8OESQ" label="os2_agency_map_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwImMx-Eea2Ze65m8OESQ" name="os2_contract_lookup_raw" id="_rftsLMx-Eea2Ze65m8OESQ" label="os2_contract_lookup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwImcx-Eea2Ze65m8OESQ" name="os2_raw" id="_rftsLcx-Eea2Ze65m8OESQ" label="os2_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwImsx-Eea2Ze65m8OESQ" name="os2_reference_lkup_raw" id="_rftsLsx-Eea2Ze65m8OESQ" label="os2_reference_lkup_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIm8x-Eea2Ze65m8OESQ" name="plan_table" id="_rftsL8x-Eea2Ze65m8OESQ" label="plan_table" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwInMx-Eea2Ze65m8OESQ" name="psc_xref" id="_rfuTMMx-Eea2Ze65m8OESQ" label="psc_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIncx-Eea2Ze65m8OESQ" name="satcom_agency_abcodes" id="_rfuTMcx-Eea2Ze65m8OESQ" label="satcom_agency_abcodes" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwInsx-Eea2Ze65m8OESQ" name="satcom_cs2_sb" id="_rfuTMsx-Eea2Ze65m8OESQ" label="satcom_cs2_sb" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIn8x-Eea2Ze65m8OESQ" name="satcom_estsales_raw" id="_rfuTM8x-Eea2Ze65m8OESQ" label="satcom_estsales_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIoMx-Eea2Ze65m8OESQ" name="satcom_sched70_agencycodes" id="_rfuTNMx-Eea2Ze65m8OESQ" label="satcom_sched70_agencycodes" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIocx-Eea2Ze65m8OESQ" name="satcom_sched70_lineitemdata" id="_rfuTNcx-Eea2Ze65m8OESQ" label="satcom_sched70_lineitemdata" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwIosx-Eea2Ze65m8OESQ" name="satcom_sched70_salesdata" id="_rfuTNsx-Eea2Ze65m8OESQ" label="satcom_sched70_salesdata" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvcMx-Eea2Ze65m8OESQ" name="satcom_vendor_duns_table" id="_rfuTN8x-Eea2Ze65m8OESQ" label="satcom_vendor_duns_table" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvccx-Eea2Ze65m8OESQ" name="satcom_vendor_duns_xref" id="_rfuTOMx-Eea2Ze65m8OESQ" label="satcom_vendor_duns_xref" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvcsx-Eea2Ze65m8OESQ" name="satcom_vendor_map_table" id="_rfuTOcx-Eea2Ze65m8OESQ" label="satcom_vendor_map_table" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvc8x-Eea2Ze65m8OESQ" name="soapm61_am_alerts_raw" id="_rfuTOsx-Eea2Ze65m8OESQ" label="soapm61_am_alerts_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvdMx-Eea2Ze65m8OESQ" name="soapm61_mo_roll_org_d_raw" id="_rfuTO8x-Eea2Ze65m8OESQ" label="soapm61_mo_roll_org_d_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvdcx-Eea2Ze65m8OESQ" name="soapm61_mo_rollup_day_raw" id="_rfu6QMx-Eea2Ze65m8OESQ" label="soapm61_mo_rollup_day_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvdsx-Eea2Ze65m8OESQ" name="soapm61_mo_usagedata_raw" id="_rfu6Qcx-Eea2Ze65m8OESQ" label="soapm61_mo_usagedata_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvd8x-Eea2Ze65m8OESQ" name="soapm61_svc_operations_raw" id="_rfu6Qsx-Eea2Ze65m8OESQ" label="soapm61_svc_operations_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwveMx-Eea2Ze65m8OESQ" name="soapm61_uddi_business_raw" id="_rfu6Q8x-Eea2Ze65m8OESQ" label="soapm61_uddi_business_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvecx-Eea2Ze65m8OESQ" name="soapm61_wsdl_service_raw" id="_rfu6RMx-Eea2Ze65m8OESQ" label="soapm61_wsdl_service_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvesx-Eea2Ze65m8OESQ" name="soasm52_am_alerts_raw" id="_rfu6Rcx-Eea2Ze65m8OESQ" label="soasm52_am_alerts_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwve8x-Eea2Ze65m8OESQ" name="soasm52_mo_roll_org_d_raw" id="_rfu6Rsx-Eea2Ze65m8OESQ" label="soasm52_mo_roll_org_d_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvfMx-Eea2Ze65m8OESQ" name="soasm52_mo_rollup_day_raw" id="_rfu6R8x-Eea2Ze65m8OESQ" label="soasm52_mo_rollup_day_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvfcx-Eea2Ze65m8OESQ" name="soasm52_mo_usagedata_raw" id="_rfu6SMx-Eea2Ze65m8OESQ" label="soasm52_mo_usagedata_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvfsx-Eea2Ze65m8OESQ" name="soasm52_svc_operations_raw" id="_rfu6Scx-Eea2Ze65m8OESQ" label="soasm52_svc_operations_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvf8x-Eea2Ze65m8OESQ" name="soasm52_uddi_business_raw" id="_rfu6Ssx-Eea2Ze65m8OESQ" label="soasm52_uddi_business_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvgMx-Eea2Ze65m8OESQ" name="soasm52_wsdl_service_raw" id="_rfu6S8x-Eea2Ze65m8OESQ" label="soasm52_wsdl_service_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvgcx-Eea2Ze65m8OESQ" name="transcom_asaa_raw" id="_rfu6TMx-Eea2Ze65m8OESQ" label="transcom_asaa_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvgsx-Eea2Ze65m8OESQ" name="transcom_fdedomestic_raw" id="_rfu6Tcx-Eea2Ze65m8OESQ" label="transcom_fdedomestic_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvg8x-Eea2Ze65m8OESQ" name="transcom_fdeinternational_raw" id="_rfu6Tsx-Eea2Ze65m8OESQ" label="transcom_fdeinternational_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvhMx-Eea2Ze65m8OESQ" name="transcom_nacg_adj_raw" id="_rfu6T8x-Eea2Ze65m8OESQ" label="transcom_nacg_adj_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvhcx-Eea2Ze65m8OESQ" name="transcom_nacg_raw" id="_rfu6UMx-Eea2Ze65m8OESQ" label="transcom_nacg_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvhsx-Eea2Ze65m8OESQ" name="transcom_pazc_raw" id="_rfvhUMx-Eea2Ze65m8OESQ" label="transcom_pazc_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rfwvh8x-Eea2Ze65m8OESQ" name="transcom_ups_raw" id="_rfvhUcx-Eea2Ze65m8OESQ" label="transcom_ups_raw" tableType="TABLE"/>
+    </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSHMx-Eea2Ze65m8OESQ" name="daily_stg"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSHcx-Eea2Ze65m8OESQ" name="dds"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSHsx-Eea2Ze65m8OESQ" name="demo"/>
