@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_CWH4oMx-Eea2Ze65m8OESQ" name="Redshift_EDW" id="_gCX7kMx9Eea2Ze65m8OESQ" label="Redshift_EDW" dataPackage="_g4iSGsx-Eea2Ze65m8OESQ" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-    <taggedValue xmi:id="_CWH4ocx-Eea2Ze65m8OESQ" tag="Is Conn Need Reload" value="true"/>
-    <taggedValue xmi:id="_CcipsMx-Eea2Ze65m8OESQ" tag="package filter" value=""/>
-    <taggedValue xmi:id="_CcsasMx-Eea2Ze65m8OESQ" tag="Status" value=""/>
-    <taggedValue xmi:id="_Ccsascx-Eea2Ze65m8OESQ" tag="Version" value="0.1"/>
-    <taggedValue xmi:id="_Ccsassx-Eea2Ze65m8OESQ" tag="Purpose" value=""/>
-    <taggedValue xmi:id="_Ccsas8x-Eea2Ze65m8OESQ" tag="Description" value=""/>
-    <taggedValue xmi:id="_CcsatMx-Eea2Ze65m8OESQ" tag="Author" value=""/>
-    <taggedValue xmi:id="_Ccsatcx-Eea2Ze65m8OESQ" tag="otherParameter"/>
-    <taggedValue xmi:id="_g6Ct8Mx-Eea2Ze65m8OESQ" tag="DB ProductName" value=""/>
-    <taggedValue xmi:id="_g6Ct8cx-Eea2Ze65m8OESQ" tag="DB ProductVersion" value=""/>
-    <parameters xmi:id="_CWH4osx-Eea2Ze65m8OESQ" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_g4iSEMx-Eea2Ze65m8OESQ" name="Redshift_EDW" id="_gCX7kMx9Eea2Ze65m8OESQ" label="Redshift_EDW" dataPackage="_g4iSGsx-Eea2Ze65m8OESQ" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_g4iSEcx-Eea2Ze65m8OESQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_g4iSEsx-Eea2Ze65m8OESQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_g4iSE8x-Eea2Ze65m8OESQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_g4iSFMx-Eea2Ze65m8OESQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_g4iSFcx-Eea2Ze65m8OESQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_g4iSFsx-Eea2Ze65m8OESQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_g4iSF8x-Eea2Ze65m8OESQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_g4iSGMx-Eea2Ze65m8OESQ" tag="otherParameter"/>
+    <parameters xmi:id="_g4iSGcx-Eea2Ze65m8OESQ" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_g4iSGsx-Eea2Ze65m8OESQ" name="edw" dataManager="_CWH4oMx-Eea2Ze65m8OESQ">
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_g4iSGsx-Eea2Ze65m8OESQ" name="edw" dataManager="_g4iSEMx-Eea2Ze65m8OESQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSG8x-Eea2Ze65m8OESQ" name="asap_stg"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSHMx-Eea2Ze65m8OESQ" name="daily_stg"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSHcx-Eea2Ze65m8OESQ" name="dds"/>
