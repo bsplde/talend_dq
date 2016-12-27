@@ -9,8 +9,9 @@
     <taggedValue xmi:id="_Ccsas8x-Eea2Ze65m8OESQ" tag="Description" value=""/>
     <taggedValue xmi:id="_CcsatMx-Eea2Ze65m8OESQ" tag="Author" value=""/>
     <taggedValue xmi:id="_Ccsatcx-Eea2Ze65m8OESQ" tag="otherParameter"/>
-    <taggedValue xmi:id="_g6Ct8Mx-Eea2Ze65m8OESQ" tag="DB ProductName" value=""/>
-    <taggedValue xmi:id="_g6Ct8cx-Eea2Ze65m8OESQ" tag="DB ProductVersion" value=""/>
+    <taggedValue xmi:id="_g6Ct8Mx-Eea2Ze65m8OESQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_g6Ct8cx-Eea2Ze65m8OESQ" tag="DB ProductVersion" value="08.00.0002"/>
+    <taggedValue xmi:id="_kq37QMx-Eea2Ze65m8OESQ" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_CWH4osx-Eea2Ze65m8OESQ" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_g4iSGsx-Eea2Ze65m8OESQ" name="edw" dataManager="_CWH4oMx-Eea2Ze65m8OESQ">
