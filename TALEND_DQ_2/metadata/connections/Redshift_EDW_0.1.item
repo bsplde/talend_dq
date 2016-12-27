@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_CWH4oMx-Eea2Ze65m8OESQ" name="Redshift_EDW" id="_gCX7kMx9Eea2Ze65m8OESQ" label="Redshift_EDW" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://:5439/edw" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-  <taggedValue xmi:id="_CWH4ocx-Eea2Ze65m8OESQ" tag="Is Conn Need Reload" value="true"/>
+  <taggedValue xmi:id="_CWH4ocx-Eea2Ze65m8OESQ" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_CcipsMx-Eea2Ze65m8OESQ" tag="package filter" value=""/>
+  <taggedValue xmi:id="_CcsasMx-Eea2Ze65m8OESQ" tag="Status" value=""/>
+  <taggedValue xmi:id="_Ccsascx-Eea2Ze65m8OESQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_Ccsassx-Eea2Ze65m8OESQ" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_Ccsas8x-Eea2Ze65m8OESQ" tag="Description" value=""/>
+  <taggedValue xmi:id="_CcsatMx-Eea2Ze65m8OESQ" tag="Author" value=""/>
+  <taggedValue xmi:id="_Ccsatcx-Eea2Ze65m8OESQ" tag="otherParameter"/>
   <parameters xmi:id="_CWH4osx-Eea2Ze65m8OESQ" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
 </TalendMetadata:DatabaseConnection>
