@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:id="_XX_TYM1DEeaK2JQVPLlP_Q" name="Connection Overview Analysis" creationDate="2016-12-28T16:19:48.057-0500">
+  <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
+  <taggedValue xmi:id="_XX_TYc1DEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_XX_TYs1DEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_XX_TY81DEeaK2JQVPLlP_Q" tag="Purpose" value="poc on Connection Overview Analysis"/>
+  <taggedValue xmi:id="_XX_TZM1DEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_XX_TZc1DEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_XX_TZs1DEeaK2JQVPLlP_Q">
+    <connection href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
+    <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
+  </context>
+  <results xmi:id="_XX_TZ81DEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_XX_TaM1DEeaK2JQVPLlP_Q"/>
+    <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_XX_Tac1DEeaK2JQVPLlP_Q">
+      <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+      <schemaIndicators xmi:id="_XX_Tas1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSG8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Ta81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSHMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TbM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSHcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tbc1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSHsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tbs1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSH8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tb81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSIMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TcM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSIcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tcc1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSIsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tcs1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSI8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tc81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSJMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TdM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSJcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tdc1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSJsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tds1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSJ8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Td81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSKMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TeM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSKcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tec1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSKsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tes1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSK8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Te81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSLMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TfM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSLcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tfc1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSLsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tfs1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSL8x-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_Tf81DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSMMx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <schemaIndicators xmi:id="_XX_TgM1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSMcx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      </schemaIndicators>
+      <catalogIndicators xmi:id="_XX_Tgc1DEeaK2JQVPLlP_Q">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/Redshift_EDW_0.1.item#_g4iSGsx-Eea2Ze65m8OESQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+      </catalogIndicators>
+    </indicators>
+  </results>
+  <parameters xmi:id="_XX_Tgs1DEeaK2JQVPLlP_Q" analysisType="Connection Analysis"/>
+</dataquality.analysis:Analysis>
