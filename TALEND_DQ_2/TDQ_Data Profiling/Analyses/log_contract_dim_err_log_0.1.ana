@@ -42,7 +42,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLEM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igVbQM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h4qXQM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_h4qXQM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_h4qXQc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_h4qXQs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_h4qXQ80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -53,7 +53,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLEM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igVbQc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h495QM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_h495QM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_h495Qc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_h495Qs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_h495Q80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -64,7 +64,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLEM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igVbQs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h534MM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_h534MM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_h534Mc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_h534Ms0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_h534M80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -75,7 +75,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLEM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igVbQ80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h65L4M0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_h65L4M0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_h65L4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_h65L4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_h65L480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -92,7 +92,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLEM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igWCUM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h7fo0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_h7fo0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_h7gP4M0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_h7gP4c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_h7gP4s0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -109,7 +109,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igYekM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h721MM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_h721MM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_h721Mc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_h721Ms0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_h721M80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -120,7 +120,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igZFoM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_vehicle_name&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h8ZnwM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_h8ZnwM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_h8Znwc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_h8Znws0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_h8Znw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -131,7 +131,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igZFoc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_vehicle_name&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h8u-8M0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_h8u-8M0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_h8u-8c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_h8u-8s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_h8u-880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -142,7 +142,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_iglS4M0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_vehicle_name&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_vehicle_name&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h8-PgM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_h8-PgM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_h8-Pgc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_h8-Pgs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_h8-Pg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -159,7 +159,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl58M0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_vehicle_name&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_vehicle_name&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h9aUYM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_h9aUYM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_h9aUYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_h9aUYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_h9aUY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -176,7 +176,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLFM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl58c0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;contract_vehicle_name&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;contract_vehicle_name&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h9wSoM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_h9wSoM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_h9wSoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_h9wSos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_h9wSo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -191,7 +191,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl58s0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h9-VEM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_h9-VEM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_h9-VEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_h9-VEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_h9-VE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -202,7 +202,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl5880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_number&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h-OzwM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_h-OzwM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_h-Ozwc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_h-Ozws0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_h-Ozw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -213,7 +213,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl59M0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_number&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h-YkwM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_h-YkwM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_h-Ykwc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_h-Ykws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_h-Ykw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -224,7 +224,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl59c0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_number&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h-i80M0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_h-i80M0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_h-i80c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_h-i80s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_h-i8080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -241,7 +241,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl59s0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_number&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h-st0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_h-st0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_h-st0c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_h-st0s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_h-st080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -258,7 +258,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLGM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl5980LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;contract_number&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;contract_number&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h_UY4M0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_h_UY4M0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_h_UY4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_h_UY4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_h_UY480LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -273,7 +273,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igl5-M0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h_oh8M0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_h_oh8M0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_h_oh8c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_h_oh8s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_h_oh880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -284,7 +284,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhAM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;bpa_number&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_h_xr4M0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_h_xr4M0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_h_xr4c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_h_xr4s0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_h_xr480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -295,7 +295,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhAc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;bpa_number&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iAMioM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iAMioM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iAMioc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iAMios0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iAMio80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -306,7 +306,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhAs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;bpa_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;bpa_number&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iBFTcM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iBFTcM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iBFTcc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iBFTcs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iBFTc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -323,7 +323,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;bpa_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;bpa_number&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iBPEcM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iBPEcM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iBPEcc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iBPEcs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iBPEc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -340,7 +340,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLHM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhBM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;bpa_number&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;bpa_number&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iCVQoM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iCVQoM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iCVQoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iCVQos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iCVQo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -355,7 +355,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhBc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iCqAwM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iCqAwM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iCqAwc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iCqAws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iCqAw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -366,7 +366,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhBs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;aux_schedule_number&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iC_X8M0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iC_X8M0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iC_X8c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iC_X8s0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iC_X880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -377,7 +377,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igmhB80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;aux_schedule_number&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iDJwAM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iDJwAM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iDJwAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iDJwAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iDJwA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -388,7 +388,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIEM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;aux_schedule_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;aux_schedule_number&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iDdSAM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iDdSAM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iDdSAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iDdSAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iDdSA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -405,7 +405,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIEc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;aux_schedule_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;aux_schedule_number&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iD7zIM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iD7zIM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iD7zIc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iD7zIs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iD7zI80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -422,7 +422,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLIM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIEs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;aux_schedule_number&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;aux_schedule_number&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iERKUM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iERKUM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iERKUc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iERKUs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iERKU80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -437,7 +437,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iEvEYM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iEvEYM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iEvEYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iEvEYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iEvEY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -448,7 +448,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIFM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;program_name&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iE7RoM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iE7RoM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iE7Roc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iE7Ros0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iE7Ro80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -459,7 +459,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIFc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;program_name&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iFFCoM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iFFCoM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iFFCoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iFFCos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iFFCo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -470,7 +470,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIFs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;program_name&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;program_name&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iFOzoM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iFOzoM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iFOzoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iFOzos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iFOzo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -487,7 +487,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIF80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;program_name&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;program_name&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iFi8sM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iFi8sM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iFi8sc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iFi8ss0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iFi8s80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -504,7 +504,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLJM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIGM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;program_name&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;program_name&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iFrfkM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iFrfkM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iFrfkc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iFrfks0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iFrfk80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -519,7 +519,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIGc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iF0pgM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iF0pgM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iF0pgc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iF0pgs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iF0pg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -530,7 +530,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignIGs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_type&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iF-agM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iF-agM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iF-agc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iF-ags0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iF-ag80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -541,7 +541,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvIM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_type&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iGR8gM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iGR8gM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iGR8gc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iGR8gs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iGR8g80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -552,7 +552,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvIc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_type&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_type&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iGkQYM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iGkQYM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iGkQYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iGkQYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iGkQY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -569,7 +569,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvIs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_type&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_type&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iGsMMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iGsMMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iGsMMc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iGsMMs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iGsMM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -586,7 +586,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLKM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvI80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;contract_type&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;contract_type&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iG2kQM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iG2kQM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iG2kQc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iG2kQs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iG2kQ80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -601,7 +601,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvJM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iHCKcM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iHCKcM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iHCKcc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iHCKcs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iHCKc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -612,7 +612,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvJc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;duns&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iHL7cM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iHL7cM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iHL7cc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iHL7cs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iHL7c80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -623,7 +623,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_ignvJs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;duns&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iHtf4M0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iHtf4M0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iHtf4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iHtf4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iHtf480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -634,7 +634,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWMM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;duns&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;duns&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iIC3EM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iIC3EM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iIC3Ec0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iIC3Es0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iIC3E80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -651,7 +651,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWMc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;duns&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;duns&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iIMoEM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iIMoEM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iIMoEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iIMoEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iIMoE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -668,7 +668,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLLM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWMs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;duns&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;duns&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iIh_QM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iIh_QM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iIh_Qc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iIh_Qs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iIh_Q80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -683,7 +683,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLMM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iI82AM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iI82AM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iI82Ac0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iI82As0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iI82A80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -694,7 +694,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLMM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWNM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_start_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iJHOEM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iJHOEM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iJHOEc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iJHOEs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iJHOE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -705,7 +705,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLMM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWNc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_start_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iJaJAM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iJaJAM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iJaJAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iJaJAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iJaJA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -716,7 +716,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLMM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWNs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_start_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_start_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iJjS8M0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iJjS8M0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iJjS8c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iJjS8s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iJjS880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -733,7 +733,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLMM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWN80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_start_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_start_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iJ5RMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iJ5RMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iJ5RMc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iJ5RMs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iJ5RM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -750,7 +750,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLNM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWOM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iKB0EM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iKB0EM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iKB0Ec0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iKB0Es0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iKB0E80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -761,7 +761,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLNM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igoWOc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_end_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iKVWEM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iKVWEM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iKVWEc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iKVWEs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iKVWE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -772,7 +772,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLNM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9QM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_end_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iKo4EM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iKo4EM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iKo4Ec0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iKpfIM0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iKpfIc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -783,7 +783,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLNM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9Qc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_end_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_end_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iK2TcM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iK2TcM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iK2Tcc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iK2Tcs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iK2Tc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -800,7 +800,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLNM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9Qs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_end_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_end_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iLCgsM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iLCgsM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iLCgsc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iLCgss0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iLCgs80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -817,7 +817,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLOM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9Q80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iLLDkM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iLLDkM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iLLDkc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iLLDks0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iLLDk80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -828,7 +828,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLOM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9RM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;contract_award_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iLS_YM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iLS_YM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iLS_Yc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iLS_Ys0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iLS_Y80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -839,7 +839,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLOM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9Rc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;contract_award_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iLcwYM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iLcwYM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iLcwYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iLcwYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iLcwY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -850,7 +850,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLOM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9Rs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_award_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;contract_award_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iLsoAM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iLsoAM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iLsoAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iLsoAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iLsoA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -867,7 +867,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLOM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9R80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;contract_award_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;contract_award_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iL1K4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iL1K4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iL1K4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iL1K4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iL1K480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -884,7 +884,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igo9SM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iL-U0M0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iL-U0M0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iL-U0c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iL-U0s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iL-U080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -895,7 +895,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkUM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_number&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iMOMcM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iMOMcM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iMOMcc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iMOMcs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iMOMc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -906,7 +906,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkUc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_number&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iMkxwM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iMkxwM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iMkxwc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iMkxws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iMkxw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -917,7 +917,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkUs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_number&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iM13gM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iM13gM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iM13gc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iM13gs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iM13g80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -934,7 +934,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkU80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_number&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_number&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iNKnoM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iNKnoM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iNKnoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iNKnos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iNKno80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -951,7 +951,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLPM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkVM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;task_order_number&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;task_order_number&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iNfXwM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_iNfXwM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_iNfXwc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_iNfXws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_iNfXw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -966,7 +966,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLQM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkVc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iNohsM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iNohsM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iNohsc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iNpIwM0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iNpIwc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -977,7 +977,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLQM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkVs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_award_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iN6OgM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iN6OgM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iN6Ogc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iN6Ogs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iN6Og80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -988,7 +988,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLQM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkV80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_award_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iONwgM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iONwgM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iONwgc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iONwgs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iONwg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -999,7 +999,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLQM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkWM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_award_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_award_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iOZWsM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iOZWsM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iOZWsc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iOZWss0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iOZWs80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1016,7 +1016,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLQM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igpkWc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_award_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_award_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iPEFEM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iPEFEM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iPEFEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iPEFEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iPEFE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1033,7 +1033,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLRM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLYM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iPXAAM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iPXAAM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iPXAAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iPXAAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iPXAA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1044,7 +1044,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLRM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLYc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_start_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iPpT4M0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iPpT4M0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iPpT4c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iPpT4s0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iPpT480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1055,7 +1055,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLRM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLYs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_start_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iPyd0M0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iPyd0M0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iPyd0c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iPyd0s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iPyd080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1066,7 +1066,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLRM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_start_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_start_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iQHN8M0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iQHN8M0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iQHN8c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iQHN8s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iQHN880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1083,7 +1083,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLRM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLZM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_start_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_start_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iQfBYM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iQfBYM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iQfBYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iQfBYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iQfBY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1100,7 +1100,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLSM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLZc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iQ5REM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iQ5REM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iQ5REc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iQ5REs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iQ5RE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1111,7 +1111,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLSM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLZs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_end_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iRhjMM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iRhjMM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iRhjMc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iRhjMs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iRhjM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1122,7 +1122,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLSM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLZ80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_end_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iR5WoM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iR5WoM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iR5Woc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iR5Wos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iR5Wo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1133,7 +1133,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLSM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqLaM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_end_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_end_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iSZF4M0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iSZF4M0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iSZF4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iSZF4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iSZF480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1150,7 +1150,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLSM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqycM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_end_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_end_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iTJT0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iTJT0M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iTJT0c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iTJT0s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iTJT080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1167,7 +1167,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLTM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqycc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iTX9UM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iTX9UM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iTX9Uc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iTX9Us0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iTX9U80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1178,7 +1178,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLTM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqycs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_ultimate_completion_date_sk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iUXb0M0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iUXb0M0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iUXb0c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iUXb0s0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iUXb080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1189,7 +1189,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLTM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqyc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_ultimate_completion_date_sk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iUuoMM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iUuoMM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iUuoMc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iUuoMs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iUuoM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1200,7 +1200,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLTM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqydM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_ultimate_completion_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_ultimate_completion_date_sk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iU4ZMM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iU4ZMM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iU4ZMc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iU4ZMs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iU4ZM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1217,7 +1217,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLTM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqydc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_ultimate_completion_date_sk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_ultimate_completion_date_sk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iVCKMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iVCKMM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iVCKMc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iVCKMs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iVCKM80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1234,7 +1234,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLUM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igqyds0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iVRawM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iVRawM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iVRawc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iVRaws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iVRaw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1245,7 +1245,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLUM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZgM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;task_order_value&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iV2pkM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iV2pkM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iV2pkc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iV2pks0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iV2pk80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1256,7 +1256,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLUM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZgc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;task_order_value&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iWLZsM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iWLZsM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iWLZsc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iWLZss0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iWLZs80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1267,7 +1267,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLUM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZgs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_value&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;task_order_value&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iWimEM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iWimEM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iWimEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iWimEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iWimE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1284,7 +1284,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLUM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;task_order_value&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;task_order_value&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iWrwAM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iWrwAM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iWrwAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iWrwAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iWrwA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1301,7 +1301,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLVM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZhM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iW9c0M0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iW9c0M0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iW9c0c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iW9c0s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iW9c080LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1312,7 +1312,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLVM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igrZhc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;aux_task_order_bid_count&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iXIb8M0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iXIb8M0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iXIb8c0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iXIb8s0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iXIb880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1323,7 +1323,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLVM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsAkM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;aux_task_order_bid_count&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iXwuEM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iXwuEM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iXwuEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iXwuEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iXwuE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1334,7 +1334,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLVM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsAkc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;aux_task_order_bid_count&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;aux_task_order_bid_count&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iYOoIM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iYOoIM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iYOoIc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iYOoIs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iYOoI80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1351,7 +1351,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLVM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsAks0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;aux_task_order_bid_count&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;aux_task_order_bid_count&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iYbccM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iYbccM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iYbccc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iYbccs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iYbcc80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1368,7 +1368,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnoM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iYvlgM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_iYvlgM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_iYvlgc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_iYvlgs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_iYvlg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1379,7 +1379,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnoc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;sys_source_type&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iZNfkM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_iZNfkM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_iZNfkc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_iZNfks0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_iZNfk80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1390,7 +1390,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnos0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;sys_source_type&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iZl6EM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_iZl6EM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_iZl6Ec0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_iZl6Es0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_iZl6E80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1401,7 +1401,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsno80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_source_type&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;sys_source_type&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iaDNEM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_iaDNEM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_iaDNEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_iaDNEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_iaDNE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1418,7 +1418,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnpM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_source_type&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;sys_source_type&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_iaM-EM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_iaM-EM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_iaM-Ec0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_iaM-Es0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_iaM-E80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1435,7 +1435,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLWM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnpc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;sys_source_type&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;sys_source_type&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ia5hoM0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_ia5hoM0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_ia5hoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_ia5hos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_ia5ho80LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1450,7 +1450,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLXM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnps0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ibHkEM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_ibHkEM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_ibHkEc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_ibHkEs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_ibHkE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1461,7 +1461,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLXM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnp80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;sys_created_timestamp&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ibn6YM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_ibn6YM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_ibohcM0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_ibohcc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_ibohcs0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1472,7 +1472,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLXM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnqM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;sys_created_timestamp&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ib3K8M0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_ib3K8M0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_ib3K8c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_ib3K8s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_ib3K880LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1483,7 +1483,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLXM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igsnqc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_created_timestamp&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;sys_created_timestamp&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_icYvYM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_icYvYM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_icYvYc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_icYvYs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_icYvY80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1500,7 +1500,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLXM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOsM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_created_timestamp&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;sys_created_timestamp&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ickVkM0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_ickVkM0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_ickVkc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_ickVks0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_ickVk80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1517,7 +1517,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLYM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOsc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_idDdwM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_idDdwM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_idDdwc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_idDdws0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_idDdw80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1528,7 +1528,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLYM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOss0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;sys_last_updated_timestamp&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_idaDEM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_idaDEM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_idaDEc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_idaDEs0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_idaDE80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1539,7 +1539,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLYM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOs80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;sys_last_updated_timestamp&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_idp6sM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_idp6sM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_idp6sc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_idp6ss0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_idp6s80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1550,7 +1550,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLYM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOtM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_last_updated_timestamp&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;sys_last_updated_timestamp&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_idzEoM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_idzEoM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_idzEoc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_idzEos0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_idzEo80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1567,7 +1567,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLYM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOtc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_last_updated_timestamp&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;sys_last_updated_timestamp&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ieJC4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_ieJC4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_ieJC4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_ieJC4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_ieJC480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1584,7 +1584,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOts0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ieY6gM0LEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+        <builtInIndicatorDefinition xmi:id="_ieY6gM0LEeaK2JQVPLlP_Q" name="Row Count" label="Row Count">
           <taggedValue xmi:id="_ieY6gc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
           <taggedValue xmi:id="_ieY6gs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
           <sqlGenericExpression xmi:id="_ieY6g80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
@@ -1595,7 +1595,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOt80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE &quot;sys_contract_nk&quot; IS NULL " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ieu4wM0LEeaK2JQVPLlP_Q" name="Null Count" categories="Simple Statistics" label="Null Count">
+        <builtInIndicatorDefinition xmi:id="_ieu4wM0LEeaK2JQVPLlP_Q" name="Null Count" label="Null Count">
           <taggedValue xmi:id="_ieu4wc0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluate the number of missing data (null records)"/>
           <taggedValue xmi:id="_ieu4ws0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of null rows"/>
           <sqlGenericExpression xmi:id="_ieu4w80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
@@ -1606,7 +1606,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOuM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;sys_contract_nk&quot; FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; ) A" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ie7GAM0LEeaK2JQVPLlP_Q" name="Distinct Count" categories="Simple Statistics" label="Distinct Count">
+        <builtInIndicatorDefinition xmi:id="_ie7GAM0LEeaK2JQVPLlP_Q" name="Distinct Count" label="Distinct Count">
           <taggedValue xmi:id="_ie7GAc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
           <taggedValue xmi:id="_ie7GAs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of distinct records"/>
           <sqlGenericExpression xmi:id="_ie7GA80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
@@ -1617,7 +1617,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOuc0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_contract_nk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  GROUP BY &quot;sys_contract_nk&quot; HAVING COUNT(*) = 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ifTggM0LEeaK2JQVPLlP_Q" name="Unique Count" categories="Simple Statistics" label="Unique Count">
+        <builtInIndicatorDefinition xmi:id="_ifTggM0LEeaK2JQVPLlP_Q" name="Unique Count" label="Unique Count">
           <taggedValue xmi:id="_ifTggc0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
           <taggedValue xmi:id="_ifTggs0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of unique records"/>
           <sqlGenericExpression xmi:id="_ifTgg80LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
@@ -1634,7 +1634,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igtOus0LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &quot;sys_contract_nk&quot;, COUNT(*) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot;  m  GROUP BY &quot;sys_contract_nk&quot; HAVING COUNT(*) > 1) AS myquery" language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_ifqs4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" categories="Simple Statistics" label="Duplicate Count">
+        <builtInIndicatorDefinition xmi:id="_ifqs4M0LEeaK2JQVPLlP_Q" name="Duplicate Count" label="Duplicate Count">
           <taggedValue xmi:id="_ifqs4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
           <taggedValue xmi:id="_ifqs4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of duplicated records"/>
           <sqlGenericExpression xmi:id="_ifqs480LEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
@@ -1651,7 +1651,7 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_5lcLZM0KEeaK2JQVPLlP_Q"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_igt1wM0LEeaK2JQVPLlP_Q" body="SELECT COUNT(&quot;sys_contract_nk&quot;) FROM &quot;log&quot;.&quot;contract_dim_err_log&quot; WHERE TRIM(&quot;sys_contract_nk&quot;) = '' " language="PostgreSQL"/>
-        <builtInIndicatorDefinition xmi:id="_if0d4M0LEeaK2JQVPLlP_Q" name="Blank Count" categories="Simple Statistics" label="Blank Count">
+        <builtInIndicatorDefinition xmi:id="_if0d4M0LEeaK2JQVPLlP_Q" name="Blank Count" label="Blank Count">
           <taggedValue xmi:id="_if0d4c0LEeaK2JQVPLlP_Q" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
           <taggedValue xmi:id="_if0d4s0LEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of blank records"/>
           <sqlGenericExpression xmi:id="_if0d480LEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>

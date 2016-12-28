@@ -21954,5 +21954,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/fpds_delete_atom_raw_0.1.ana#_oqoOwM0VEeaK2JQVPLlP_Q"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/profiling_fpds_fpds_atom_vendor_summary_0.1.ana#_lvJmAM0eEeaK2JQVPLlP_Q"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Profile_fpds_tdr_stg_0.1.ana#_NyteMM0iEeaK2JQVPLlP_Q"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Connection_Overview_Analysis_0.1.ana#_XX_TYM1DEeaK2JQVPLlP_Q"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
