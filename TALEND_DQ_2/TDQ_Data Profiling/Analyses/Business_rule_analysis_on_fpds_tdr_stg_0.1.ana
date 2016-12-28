@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Pu2F0M1FEeaK2JQVPLlP_Q" name="Business rule analysis on fpds_tdr_stg" creationDate="2016-12-28T16:33:16.601-0500">
-  <taggedValue xmi:id="_Pu2F0c1FEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-  <taggedValue xmi:id="_Pu2F0s1FEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
-  <taggedValue xmi:id="_Pu2F081FEeaK2JQVPLlP_Q" tag="Purpose" value="PoC on Business rule analysis on fpds_tdr_stg"/>
-  <taggedValue xmi:id="_Pu2F1M1FEeaK2JQVPLlP_Q" tag="Description"/>
-  <taggedValue xmi:id="_Pu2F1c1FEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-  <context xmi:id="_Pu2F1s1FEeaK2JQVPLlP_Q"/>
-  <results xmi:id="_Pu2F181FEeaK2JQVPLlP_Q">
-    <resultMetadata xmi:id="_Pu2F2M1FEeaK2JQVPLlP_Q"/>
-  </results>
-  <parameters xmi:id="_Pu2F2c1FEeaK2JQVPLlP_Q" analysisType="Table Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_Pu2F0M1FEeaK2JQVPLlP_Q" name="Business rule analysis on fpds_tdr_stg" creationDate="2016-12-28T16:33:16.601-0500" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
+    <taggedValue xmi:id="_Pu2F0c1FEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Pu2F0s1FEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+    <taggedValue xmi:id="_Pu2F081FEeaK2JQVPLlP_Q" tag="Purpose" value="PoC on Business rule analysis on fpds_tdr_stg"/>
+    <taggedValue xmi:id="_Pu2F1M1FEeaK2JQVPLlP_Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_Pu2F1c1FEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cw0HUc1FEeaK2JQVPLlP_Q" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_cw0uYc1FEeaK2JQVPLlP_Q" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_Pu2F1s1FEeaK2JQVPLlP_Q">
+      <connection href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Redshift_EDW_0.1.item#_HKej2s0TEeaK2JQVPLlP_Q"/>
+    </context>
+    <results xmi:id="_Pu2F181FEeaK2JQVPLlP_Q">
+      <resultMetadata xmi:id="_Pu2F2M1FEeaK2JQVPLlP_Q" executionDate="2016-12-28T16:34:47.187-0500" executionDuration="2728" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_cw0uYM1FEeaK2JQVPLlP_Q" count="3" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Redshift_EDW_0.1.item#_HKej2s0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_dHjMUM1FEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot;  WHERE (reason_for_modification = 'M')" language="PostgreSQL"/>
+        <builtInIndicatorDefinition xmi:id="_dHbQgM1FEeaK2JQVPLlP_Q" name="Row Count" categories="Simple Statistics" label="Row Count">
+          <taggedValue xmi:id="_dHbQgc1FEeaK2JQVPLlP_Q" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_dHbQgs1FEeaK2JQVPLlP_Q" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_dHbQg81FEeaK2JQVPLlP_Q" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_Pu2F2c1FEeaK2JQVPLlP_Q" dataFilter="_cw1VcM1FEeaK2JQVPLlP_Q" analysisType="Table Analysis"/>
+    <contextType xmi:id="_cw0HUM1FEeaK2JQVPLlP_Q" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_cw1VcM1FEeaK2JQVPLlP_Q" name="Business rule analysis on fpds_tdr_stg">
+    <ranges xmi:id="_cw1Vcc1FEeaK2JQVPLlP_Q">
+      <expressions xmi:id="_cw1Vcs1FEeaK2JQVPLlP_Q">
+        <expression xsi:type="relational:TdExpression" xmi:id="_cw1Vc81FEeaK2JQVPLlP_Q" body="reason_for_modification = 'M'" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
