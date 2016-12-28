@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_kJvVUM1IEeaK2JQVPLlP_Q" name="reason_for_modification Analysis">
+  <taggedValue xmi:id="_kJvVUc1IEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_kJvVUs1IEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_kJvVU81IEeaK2JQVPLlP_Q" tag="Purpose"/>
+  <taggedValue xmi:id="_kJvVVM1IEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_kJvVVc1IEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_kJvVVs1IEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
+  <matchRules xmi:id="_kJvVV81IEeaK2JQVPLlP_Q" name="Match Rule 1">
+    <matchKeys xmi:id="_kJvVWM1IEeaK2JQVPLlP_Q" name="reason_for_modification" column="reason_for_modification" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0">
+      <algorithm xmi:id="_kJvVWc1IEeaK2JQVPLlP_Q" algorithmType="EXACT" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+</dataquality.rules:MatchRuleDefinition>
