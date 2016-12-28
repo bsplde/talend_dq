@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_NyteMM0iEeaK2JQVPLlP_Q" name="Profile_fpds_tdr_stg" creationDate="2016-12-28T12:22:31.174-0500" defaultContext="Default">
     <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_nUzGcM0kEeaK2JQVPLlP_Q"/>
@@ -42,7 +42,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbgRM0TEeaK2JQVPLlP_Q"/>
     </context>
     <results xmi:id="_NyteN80iEeaK2JQVPLlP_Q">
-      <resultMetadata xmi:id="_NyteOM0iEeaK2JQVPLlP_Q" executionDate="2016-12-28T12:41:03.586-0500" executionDuration="6633" message="For more information please refer to the Error Log view." executionNumber="2"/>
+      <resultMetadata xmi:id="_NyteOM0iEeaK2JQVPLlP_Q" executionDate="2016-12-28T12:43:58.681-0500" executionDuration="5109" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="1"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OEBQoM0iEeaK2JQVPLlP_Q" count="10" computed="true">
         <parameters xmi:id="_OEBQoc0iEeaK2JQVPLlP_Q"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf8M0TEeaK2JQVPLlP_Q"/>
@@ -289,131 +289,6 @@
           <sqlGenericExpression xmi:id="_oeQB180kEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUJmMM0kEeaK2JQVPLlP_Q" name="24 Hour Time" count="10">
-        <parameters xmi:id="_nUJmMc0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNQM0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_nj3TsD4KEd20H7qFpzB9dg"/>
-            <builtInPatterns xmi:id="_oehuoM0kEeaK2JQVPLlP_Q" name="24 Hour Time">
-              <taggedValue xmi:id="_oehuoc0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check time strings in 24 hour format"/>
-              <taggedValue xmi:id="_oehuos0kEeaK2JQVPLlP_Q" tag="Description" value="Matches a string if it is a valid time in the format of HH:MM"/>
-              <taggedValue xmi:id="_oehuo80kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_oehupM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_oehupc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_oehups0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_oehup80kEeaK2JQVPLlP_Q" body="'^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o613NM0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNQc0kEeaK2JQVPLlP_Q" name="Current Century Date" count="10">
-        <parameters xmi:id="_nUKNQs0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNQ80kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/Current_Century_Date_0.1.pattern#_khsAgIyhEd6Dle_8xC0lwg"/>
-            <builtInPatterns xmi:id="_oexmQM0kEeaK2JQVPLlP_Q" name="Current Century Date">
-              <taggedValue xmi:id="_oexmQc0kEeaK2JQVPLlP_Q" tag="Author" value="Hallam Mohamed Amine"/>
-              <taggedValue xmi:id="_oexmQs0kEeaK2JQVPLlP_Q" tag="Description" value="This regular expression will validate most (current &amp; future) date options. The weaknesses with this one is that it will allow the days to go up to 39 and does not account for leap year. Also, the months can go up to 19, instead of our commonly accepted 12 month year. :)  I designed this expression to validate dates from the year 2000 to 2099. I do not plan on this same code being in place in 2099, so I hope this is sufficient enough..."/>
-              <taggedValue xmi:id="_oexmQ80kEeaK2JQVPLlP_Q" tag="Purpose" value="match 2/14/2001 or 12-14-2001 or  12-29-2099  not matches :  2/14/1999"/>
-              <taggedValue xmi:id="_oexmRM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_oexmRc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_oexmRs0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_oexmR80kEeaK2JQVPLlP_Q" body="'^([0-1]?[0-9]{1}[/-][0-3]?[0-9]{1}[/-]20[0-9]{2})$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o613Nc0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^([0-1]?[0-9]{1}[/-][0-3]?[0-9]{1}[/-]20[0-9]{2})$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNRM0kEeaK2JQVPLlP_Q" name="EN Month" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNRc0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNRs0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/EN_Month_0.1.pattern#_cfceoEC_EeWBxNQvuPBQ-Q"/>
-            <builtInPatterns xmi:id="_oe47AM0kEeaK2JQVPLlP_Q" name="EN Month">
-              <taggedValue xmi:id="_oe47Ac0kEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-              <taggedValue xmi:id="_oe47As0kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_oe47A80kEeaK2JQVPLlP_Q" tag="Purpose" value="January | February"/>
-              <taggedValue xmi:id="_oe47BM0kEeaK2JQVPLlP_Q" tag="Description" value="Month in English"/>
-              <taggedValue xmi:id="_oe47Bc0kEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-              <taggedValue xmi:id="_oe47Bs0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_oe47B80kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_oe47CM0kEeaK2JQVPLlP_Q" body="'^(January|June|July|February|March|May|April|August|September|October|November|December)$'" language="SQL" modificationDate="2015-08-12 15:53:13"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o613Ns0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^(January|June|July|February|March|May|April|August|September|October|November|December)$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNR80kEeaK2JQVPLlP_Q" name="EN Month Abbrev" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNSM0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNSc0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/EN_Month_Abbrev_0.1.pattern#_T8ZfgEC_EeWBxNQvuPBQ-Q"/>
-            <builtInPatterns xmi:id="_ofILkM0kEeaK2JQVPLlP_Q" name="EN Month Abbrev">
-              <taggedValue xmi:id="_ofILkc0kEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-              <taggedValue xmi:id="_ofILks0kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ofILk80kEeaK2JQVPLlP_Q" tag="Purpose" value="Jan | Feb"/>
-              <taggedValue xmi:id="_ofILlM0kEeaK2JQVPLlP_Q" tag="Description" value="Month English abbreviation"/>
-              <taggedValue xmi:id="_ofILlc0kEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-              <taggedValue xmi:id="_ofILls0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ofILl80kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ofILmM0kEeaK2JQVPLlP_Q" body="'^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eQM0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNSs0kEeaK2JQVPLlP_Q" name="ISO Date" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNS80kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNTM0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/ISO_Date_0.1.pattern#_M4zogD4ZEd24WPpU35gV1A"/>
-            <builtInPatterns xmi:id="_ofNrIM0kEeaK2JQVPLlP_Q" name="ISO Date">
-              <taggedValue xmi:id="_ofNrIc0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check the validity of ISO dates."/>
-              <taggedValue xmi:id="_ofNrIs0kEeaK2JQVPLlP_Q" tag="Description" value="Matches ISO dates such as 2002-01-31."/>
-              <taggedValue xmi:id="_ofNrI80kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ofNrJM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_ofNrJc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ofNrJs0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ofNrJ80kEeaK2JQVPLlP_Q" body="'^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[[:digit:]])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$'" language="SQL"/>
-              </components>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ofNrKM0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ofNrKc0kEeaK2JQVPLlP_Q" body="'^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[\d])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$'" language="Java"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eQc0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[[:digit:]])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNTc0kEeaK2JQVPLlP_Q" name="Month" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNTs0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNT80kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/Month_0.1.pattern#_ZNaNsD4ZEd24WPpU35gV1A"/>
-            <builtInPatterns xmi:id="_ofVm8M0kEeaK2JQVPLlP_Q" name="Month">
-              <taggedValue xmi:id="_ofVm8c0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check the validity of month"/>
-              <taggedValue xmi:id="_ofVm8s0kEeaK2JQVPLlP_Q" tag="Description" value="Matches month written as 2-digit numbers (e.g. '08', '12')."/>
-              <taggedValue xmi:id="_ofVm880kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ofVm9M0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_ofVm9c0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ofVm9s0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ofVm980kEeaK2JQVPLlP_Q" body="'^((0[1-9])|(1[0-2]))$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf-M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eQs0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;date_signed&quot; ~ '^((0[1-9])|(1[0-2]))$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OEB3y80iEeaK2JQVPLlP_Q" count="10" computed="true">
         <parameters xmi:id="_OEB3zM0iEeaK2JQVPLlP_Q"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
@@ -495,131 +370,6 @@
           <sqlGenericExpression xmi:id="_oggEls0kEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
           <sqlGenericExpression xmi:id="_oggEl80kEeaK2JQVPLlP_Q" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNUM0kEeaK2JQVPLlP_Q" name="24 Hour Time" count="10">
-        <parameters xmi:id="_nUKNUc0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNUs0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/24_Hour_Time_0.1.pattern#_nj3TsD4KEd20H7qFpzB9dg"/>
-            <builtInPatterns xmi:id="_og2p4M0kEeaK2JQVPLlP_Q" name="24 Hour Time">
-              <taggedValue xmi:id="_og2p4c0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check time strings in 24 hour format"/>
-              <taggedValue xmi:id="_og2p4s0kEeaK2JQVPLlP_Q" tag="Description" value="Matches a string if it is a valid time in the format of HH:MM"/>
-              <taggedValue xmi:id="_og2p480kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_og2p5M0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_og2p5c0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_og2p5s0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_og2p580kEeaK2JQVPLlP_Q" body="'^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eSc0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNU80kEeaK2JQVPLlP_Q" name="Current Century Date" count="10">
-        <parameters xmi:id="_nUKNVM0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNVc0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/Current_Century_Date_0.1.pattern#_khsAgIyhEd6Dle_8xC0lwg"/>
-            <builtInPatterns xmi:id="_og9-oM0kEeaK2JQVPLlP_Q" name="Current Century Date">
-              <taggedValue xmi:id="_og9-oc0kEeaK2JQVPLlP_Q" tag="Author" value="Hallam Mohamed Amine"/>
-              <taggedValue xmi:id="_og9-os0kEeaK2JQVPLlP_Q" tag="Description" value="This regular expression will validate most (current &amp; future) date options. The weaknesses with this one is that it will allow the days to go up to 39 and does not account for leap year. Also, the months can go up to 19, instead of our commonly accepted 12 month year. :)  I designed this expression to validate dates from the year 2000 to 2099. I do not plan on this same code being in place in 2099, so I hope this is sufficient enough..."/>
-              <taggedValue xmi:id="_og9-o80kEeaK2JQVPLlP_Q" tag="Purpose" value="match 2/14/2001 or 12-14-2001 or  12-29-2099  not matches :  2/14/1999"/>
-              <taggedValue xmi:id="_og9-pM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_og9-pc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_og9-ps0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_og9-p80kEeaK2JQVPLlP_Q" body="'^([0-1]?[0-9]{1}[/-][0-3]?[0-9]{1}[/-]20[0-9]{2})$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eSs0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^([0-1]?[0-9]{1}[/-][0-3]?[0-9]{1}[/-]20[0-9]{2})$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNVs0kEeaK2JQVPLlP_Q" name="EN Month" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNV80kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNWM0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/EN_Month_0.1.pattern#_cfceoEC_EeWBxNQvuPBQ-Q"/>
-            <builtInPatterns xmi:id="_ohMoIM0kEeaK2JQVPLlP_Q" name="EN Month">
-              <taggedValue xmi:id="_ohMoIc0kEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-              <taggedValue xmi:id="_ohMoIs0kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ohMoI80kEeaK2JQVPLlP_Q" tag="Purpose" value="January | February"/>
-              <taggedValue xmi:id="_ohMoJM0kEeaK2JQVPLlP_Q" tag="Description" value="Month in English"/>
-              <taggedValue xmi:id="_ohMoJc0kEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-              <taggedValue xmi:id="_ohMoJs0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ohMoJ80kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ohMoKM0kEeaK2JQVPLlP_Q" body="'^(January|June|July|February|March|May|April|August|September|October|November|December)$'" language="SQL" modificationDate="2015-08-12 15:53:13"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eS80kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^(January|June|July|February|March|May|April|August|September|October|November|December)$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNWc0kEeaK2JQVPLlP_Q" name="EN Month Abbrev" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNWs0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNW80kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/EN_Month_Abbrev_0.1.pattern#_T8ZfgEC_EeWBxNQvuPBQ-Q"/>
-            <builtInPatterns xmi:id="_ohSuwM0kEeaK2JQVPLlP_Q" name="EN Month Abbrev">
-              <taggedValue xmi:id="_ohSuwc0kEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-              <taggedValue xmi:id="_ohSuws0kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ohSuw80kEeaK2JQVPLlP_Q" tag="Purpose" value="Jan | Feb"/>
-              <taggedValue xmi:id="_ohSuxM0kEeaK2JQVPLlP_Q" tag="Description" value="Month English abbreviation"/>
-              <taggedValue xmi:id="_ohSuxc0kEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-              <taggedValue xmi:id="_ohSuxs0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ohSux80kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ohSuyM0kEeaK2JQVPLlP_Q" body="'^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o62eTM0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNXM0kEeaK2JQVPLlP_Q" name="ISO Date" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNXc0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNXs0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/ISO_Date_0.1.pattern#_M4zogD4ZEd24WPpU35gV1A"/>
-            <builtInPatterns xmi:id="_ohaqkM0kEeaK2JQVPLlP_Q" name="ISO Date">
-              <taggedValue xmi:id="_ohaqkc0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check the validity of ISO dates."/>
-              <taggedValue xmi:id="_ohaqks0kEeaK2JQVPLlP_Q" tag="Description" value="Matches ISO dates such as 2002-01-31."/>
-              <taggedValue xmi:id="_ohaqk80kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ohaqlM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_ohaqlc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ohaqls0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ohaql80kEeaK2JQVPLlP_Q" body="'^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[[:digit:]])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$'" language="SQL"/>
-              </components>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ohaqmM0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ohaqmc0kEeaK2JQVPLlP_Q" body="'^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[\d])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$'" language="Java"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o63FUM0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1[[:digit:]])|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_nUKNX80kEeaK2JQVPLlP_Q" name="Month" count="10" computed="true" notMatchingValueCount="10">
-        <parameters xmi:id="_nUKNYM0kEeaK2JQVPLlP_Q">
-          <dataValidDomain xmi:id="_nUKNYc0kEeaK2JQVPLlP_Q">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/date/Month_0.1.pattern#_ZNaNsD4ZEd24WPpU35gV1A"/>
-            <builtInPatterns xmi:id="_ohzsIM0kEeaK2JQVPLlP_Q" name="Month">
-              <taggedValue xmi:id="_ohzsIc0kEeaK2JQVPLlP_Q" tag="Purpose" value="Check the validity of month"/>
-              <taggedValue xmi:id="_ohzsIs0kEeaK2JQVPLlP_Q" tag="Description" value="Matches month written as 2-digit numbers (e.g. '08', '12')."/>
-              <taggedValue xmi:id="_ohzsI80kEeaK2JQVPLlP_Q" tag="Author" value=""/>
-              <taggedValue xmi:id="_ohzsJM0kEeaK2JQVPLlP_Q" tag="Status" value="Draft"/>
-              <taggedValue xmi:id="_ohzsJc0kEeaK2JQVPLlP_Q" tag="Validation_Status" value="true"/>
-              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ohzsJs0kEeaK2JQVPLlP_Q" expressionType="REGEXP">
-                <expression xmi:id="_ohzsJ80kEeaK2JQVPLlP_Q" body="'^((0[1-9])|(1[0-2]))$'" language="SQL"/>
-              </components>
-            </builtInPatterns>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf_M0TEeaK2JQVPLlP_Q"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_o63FUc0kEeaK2JQVPLlP_Q" body="SELECT COUNT(CASE WHEN &quot;effective_date&quot; ~ '^((0[1-9])|(1[0-2]))$' THEN 1 END), COUNT(*) FROM &quot;fpds&quot;.&quot;fpds_tdr_stg&quot; " language="PostgreSQL"/>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OEB32M0iEeaK2JQVPLlP_Q" count="10" computed="true">
         <parameters xmi:id="_OEB32c0iEeaK2JQVPLlP_Q"/>
