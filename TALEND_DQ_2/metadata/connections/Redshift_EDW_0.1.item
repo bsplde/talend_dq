@@ -471,7 +471,21 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSJMx-Eea2Ze65m8OESQ" name="gss"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSJcx-Eea2Ze65m8OESQ" name="gwcm"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSJsx-Eea2Ze65m8OESQ" name="information_schema"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSJ8x-Eea2Ze65m8OESQ" name="log"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSJ8x-Eea2Ze65m8OESQ" name="log">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfZ_c0KEeaK2JQVPLlP_Q" name="address_dim_err_log" id="_0WfZ8M0KEeaK2JQVPLlP_Q" label="address_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfZ_s0KEeaK2JQVPLlP_Q" name="commodity_product_dim_err_log" id="_0WfZ8c0KEeaK2JQVPLlP_Q" label="commodity_product_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfZ_80KEeaK2JQVPLlP_Q" name="commodity_service_dim_err_log" id="_0WfZ8s0KEeaK2JQVPLlP_Q" label="commodity_service_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaAM0KEeaK2JQVPLlP_Q" name="contract_dim_err_log" id="_0WfZ880KEeaK2JQVPLlP_Q" label="contract_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaAc0KEeaK2JQVPLlP_Q" name="contract_type_dim_err_log" id="_0WfZ9M0KEeaK2JQVPLlP_Q" label="contract_type_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaAs0KEeaK2JQVPLlP_Q" name="delivery_sales_fact_err_log" id="_0WfZ9c0KEeaK2JQVPLlP_Q" label="delivery_sales_fact_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaA80KEeaK2JQVPLlP_Q" name="office_dim_err_log" id="_0WfZ9s0KEeaK2JQVPLlP_Q" label="office_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaBM0KEeaK2JQVPLlP_Q" name="ordering_process_dim_err_log" id="_0WfZ980KEeaK2JQVPLlP_Q" label="ordering_process_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaBc0KEeaK2JQVPLlP_Q" name="point_of_contact_dim_err_log" id="_0WfZ-M0KEeaK2JQVPLlP_Q" label="point_of_contact_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaBs0KEeaK2JQVPLlP_Q" name="product_sales_fact_err_log" id="_0WfZ-c0KEeaK2JQVPLlP_Q" label="product_sales_fact_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaB80KEeaK2JQVPLlP_Q" name="service_sales_fact_err_log" id="_0WfZ-s0KEeaK2JQVPLlP_Q" label="service_sales_fact_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaCM0KEeaK2JQVPLlP_Q" name="supplier_dim_err_log" id="_0WfZ-80KEeaK2JQVPLlP_Q" label="supplier_dim_err_log" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_0WfaCc0KEeaK2JQVPLlP_Q" name="task_order_dim_err_log" id="_0WfZ_M0KEeaK2JQVPLlP_Q" label="task_order_dim_err_log" tableType="TABLE"/>
+    </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSKMx-Eea2Ze65m8OESQ" name="market"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSKcx-Eea2Ze65m8OESQ" name="mdt"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSKsx-Eea2Ze65m8OESQ" name="pg_catalog"/>
