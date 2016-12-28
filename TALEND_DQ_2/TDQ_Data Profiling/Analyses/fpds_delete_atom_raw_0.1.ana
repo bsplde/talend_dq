@@ -1,13 +1,510 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_oqoOwM0VEeaK2JQVPLlP_Q" name="fpds_delete_atom_raw" creationDate="2016-12-28T10:52:26.423-0500">
-  <taggedValue xmi:id="_oqoOwc0VEeaK2JQVPLlP_Q" tag="Status" value="development"/>
-  <taggedValue xmi:id="_oqoOws0VEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
-  <taggedValue xmi:id="_oqoOw80VEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze fpds_delete_atom_raw"/>
-  <taggedValue xmi:id="_oqoOxM0VEeaK2JQVPLlP_Q" tag="Description" value="Profile and understand the data on the delete atom raw table"/>
-  <taggedValue xmi:id="_oqoOxc0VEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
-  <context xmi:id="_oqoOxs0VEeaK2JQVPLlP_Q"/>
-  <results xmi:id="_oqoOx80VEeaK2JQVPLlP_Q">
-    <resultMetadata xmi:id="_oqoOyM0VEeaK2JQVPLlP_Q"/>
-  </results>
-  <parameters xmi:id="_oqoOyc0VEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_oqoOwM0VEeaK2JQVPLlP_Q" name="fpds_delete_atom_raw" creationDate="2016-12-28T10:52:26.423-0500" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
+    <taggedValue xmi:id="_oqoOwc0VEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_oqoOws0VEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+    <taggedValue xmi:id="_oqoOw80VEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze fpds_delete_atom_raw"/>
+    <taggedValue xmi:id="_oqoOxM0VEeaK2JQVPLlP_Q" tag="Description" value="Profile and understand the data on the delete atom raw table"/>
+    <taggedValue xmi:id="_oqoOxc0VEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_o-2yUc0VEeaK2JQVPLlP_Q" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_o-2yUs0VEeaK2JQVPLlP_Q" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_o-2yU80VEeaK2JQVPLlP_Q" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_oqoOxs0VEeaK2JQVPLlP_Q">
+      <connection href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+    </context>
+    <results xmi:id="_oqoOx80VEeaK2JQVPLlP_Q">
+      <resultMetadata xmi:id="_oqoOyM0VEeaK2JQVPLlP_Q"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3ZYM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZYc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3ZYs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZY80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3ZZM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZZc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3ZZs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZZ80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3ZaM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zac0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zas0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Za80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMAM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zbc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zbs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zb80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZcM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zcc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zcs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zc80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZdM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3Zdc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zds0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zd80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZeM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMBM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zes0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Ze80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3ZfM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zfc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zfs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zf80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3ZgM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zgc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3Zgs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zg80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3ZhM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zhc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMCM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zh80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZiM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zic0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zis0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zi80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZjM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zjc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zjs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3Zj80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZkM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zkc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zks0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMDM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3ZlM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zlc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zls0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zl80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3ZmM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zmc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zms0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zm80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3ZnM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Znc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zns0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zn80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMEM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zoc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zos0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zo80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZpM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zpc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zps0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zp80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZqM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3Zqc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zqs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMFM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3ZrM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zrc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zrs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zr80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3ZsM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zsc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zss0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zs80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3ZtM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Ztc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zts0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zt80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMGM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zuc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zus0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3Zu80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZvM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zvc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zvs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-3Zv80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZwM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-3Zwc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zws0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-3Zw80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3ZxM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMHM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-3Zxs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zx80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-3ZyM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-3Zyc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-3Zys0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AcM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Acc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Acs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Ac80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AdM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4Adc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ads0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMIM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4AeM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aec0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4Aes0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ae80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4AfM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Afc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Afs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Af80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4AgM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Agc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4Ags0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ag80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMJM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4Ahc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ahs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4Ah80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AiM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4Aic0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ais0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Ai80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AjM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Ajc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ajs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMKM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4AkM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Akc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4Aks0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ak80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4AlM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Alc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Als0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Al80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4AmM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Amc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4Ams0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Am80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4Anc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ans0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4An80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AoM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4Aoc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aos0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Ao80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4ApM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Apc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aps0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4Ap80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AqM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMMM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4Aqs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aq80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4ArM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Arc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4Ars0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ar80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4AsM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Asc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Ass0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4As80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4AtM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Atc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMNM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4At80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AuM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4Auc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aus0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4Au80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AvM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4Avc0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Avs0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Av80VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4AwM0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMOM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_o-4Aws0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Aw80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_o-4AxM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Axc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_o-4Axs0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ax80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_o-4AyM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ayc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_o-4Ays0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Ay80VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_o-4AzM0VEeaK2JQVPLlP_Q">
+        <parameters xmi:id="_o-4Azc0VEeaK2JQVPLlP_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_-RvMPM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_oqoOyc0VEeaK2JQVPLlP_Q" dataFilter="_p4708M0VEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_o-2yUM0VEeaK2JQVPLlP_Q" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_p4708M0VEeaK2JQVPLlP_Q" name="fpds_delete_atom_raw">
+    <ranges xmi:id="_p4708c0VEeaK2JQVPLlP_Q">
+      <expressions xmi:id="_p4708s0VEeaK2JQVPLlP_Q">
+        <expression xsi:type="relational:TdExpression" xmi:id="_p470880VEeaK2JQVPLlP_Q" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
