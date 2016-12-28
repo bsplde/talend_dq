@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_NyteMM0iEeaK2JQVPLlP_Q" name="Profile_fpds_tdr_stg" creationDate="2016-12-28T12:22:31.174-0500">
+  <taggedValue xmi:id="_NyteMc0iEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_NyteMs0iEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_NyteM80iEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze fpds_tdr_stg"/>
+  <taggedValue xmi:id="_NyteNM0iEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_NyteNc0iEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_NyteNs0iEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_NyteN80iEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_NyteOM0iEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_NyteOc0iEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
