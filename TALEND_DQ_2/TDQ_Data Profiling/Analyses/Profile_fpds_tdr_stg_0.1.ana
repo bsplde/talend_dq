@@ -42,7 +42,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbgRM0TEeaK2JQVPLlP_Q"/>
     </context>
     <results xmi:id="_NyteN80iEeaK2JQVPLlP_Q">
-      <resultMetadata xmi:id="_NyteOM0iEeaK2JQVPLlP_Q" executionDate="2016-12-28T12:39:52.988-0500" executionDuration="50711" message="For more information please refer to the Error Log view." executionNumber="1"/>
+      <resultMetadata xmi:id="_NyteOM0iEeaK2JQVPLlP_Q" executionDate="2016-12-28T12:41:03.586-0500" executionDuration="6633" message="For more information please refer to the Error Log view." executionNumber="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_OEBQoM0iEeaK2JQVPLlP_Q" count="10" computed="true">
         <parameters xmi:id="_OEBQoc0iEeaK2JQVPLlP_Q"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbf8M0TEeaK2JQVPLlP_Q"/>
