@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_lvJmAM0eEeaK2JQVPLlP_Q" name="profiling_fpds_fpds_atom_vendor_summary" creationDate="2016-12-28T11:56:32.420-0500">
+  <taggedValue xmi:id="_lvJmAc0eEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_lvJmAs0eEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_lvJmA80eEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze the fpds_atom_vendor_summary"/>
+  <taggedValue xmi:id="_lvJmBM0eEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_lvJmBc0eEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_lvJmBs0eEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_lvJmB80eEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_lvJmCM0eEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_lvJmCc0eEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
