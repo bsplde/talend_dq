@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Csf2MM0LEeaK2JQVPLlP_Q" name="log_contract_dim_err_log" creationDate="2016-12-28T09:36:37.935-0500">
+  <taggedValue xmi:id="_Csf2Mc0LEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Csf2Ms0LEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_Csf2M80LEeaK2JQVPLlP_Q" tag="Purpose" value="PoC"/>
+  <taggedValue xmi:id="_Csf2NM0LEeaK2JQVPLlP_Q" tag="Description" value="Profile the table contract_dim_err_log"/>
+  <taggedValue xmi:id="_Csf2Nc0LEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_Csf2Ns0LEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_Csf2N80LEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_Csf2OM0LEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_Csf2Oc0LEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
