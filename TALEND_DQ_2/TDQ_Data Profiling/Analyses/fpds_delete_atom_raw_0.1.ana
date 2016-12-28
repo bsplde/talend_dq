@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_oqoOwM0VEeaK2JQVPLlP_Q" name="fpds_delete_atom_raw" creationDate="2016-12-28T10:52:26.423-0500">
+  <taggedValue xmi:id="_oqoOwc0VEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_oqoOws0VEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_oqoOw80VEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze fpds_delete_atom_raw"/>
+  <taggedValue xmi:id="_oqoOxM0VEeaK2JQVPLlP_Q" tag="Description" value="Profile and understand the data on the delete atom raw table"/>
+  <taggedValue xmi:id="_oqoOxc0VEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_oqoOxs0VEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_oqoOx80VEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_oqoOyM0VEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_oqoOyc0VEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
