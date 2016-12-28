@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_Pu2F0M1FEeaK2JQVPLlP_Q" name="Business rule analysis on fpds_tdr_stg" creationDate="2016-12-28T16:33:16.601-0500">
+  <taggedValue xmi:id="_Pu2F0c1FEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Pu2F0s1FEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_Pu2F081FEeaK2JQVPLlP_Q" tag="Purpose" value="PoC on Business rule analysis on fpds_tdr_stg"/>
+  <taggedValue xmi:id="_Pu2F1M1FEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_Pu2F1c1FEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_Pu2F1s1FEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_Pu2F181FEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_Pu2F2M1FEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_Pu2F2c1FEeaK2JQVPLlP_Q" analysisType="Table Analysis"/>
+</dataquality.analysis:Analysis>
