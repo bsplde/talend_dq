@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_1H-QgM0mEeaK2JQVPLlP_Q" name="File_Metadata" dataPackage="_1H-Qgc0mEeaK2JQVPLlP_Q" Server="Localhost 127.0.0.1" FilePath="C:/Talend/fpds_tdr_stg.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_1H-Qgc0mEeaK2JQVPLlP_Q" name="default" dataManager="_1H-QgM0mEeaK2JQVPLlP_Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_1H-Qgs0mEeaK2JQVPLlP_Q" id="_YC9pMM0mEeaK2JQVPLlP_Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qg80mEeaK2JQVPLlP_Q" label="reference_piid" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QhM0mEeaK2JQVPLlP_Q" label="piid" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qhc0mEeaK2JQVPLlP_Q" label="date_signed" length="19" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qhs0mEeaK2JQVPLlP_Q" label="effective_date" length="19" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qh80mEeaK2JQVPLlP_Q" label="ultimate_completion_date" length="18" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QiM0mEeaK2JQVPLlP_Q" label="contracting_agency_id" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qic0mEeaK2JQVPLlP_Q" label="contracting_agency_name" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qis0mEeaK2JQVPLlP_Q" label="contracting_office_id" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qi80mEeaK2JQVPLlP_Q" label="contracting_office_name" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QjM0mEeaK2JQVPLlP_Q" label="funding_agency_code" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qjc0mEeaK2JQVPLlP_Q" label="funding_agency_name" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qjs0mEeaK2JQVPLlP_Q" label="funding_office_code" length="31" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qj80mEeaK2JQVPLlP_Q" label="funding_office_name" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QkM0mEeaK2JQVPLlP_Q" label="agency_identifier" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qkc0mEeaK2JQVPLlP_Q" label="main_account_code" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qks0mEeaK2JQVPLlP_Q" label="vendor_name" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qk80mEeaK2JQVPLlP_Q" label="dollars_obligated" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QlM0mEeaK2JQVPLlP_Q" label="total_dollars_obligated" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qlc0mEeaK2JQVPLlP_Q" label="idv_dollars_obligated" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Qls0mEeaK2JQVPLlP_Q" label="modification_number" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-Ql80mEeaK2JQVPLlP_Q" label="reason_for_modification" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1H-QmM0mEeaK2JQVPLlP_Q" label="reason_for_modification_desc" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
