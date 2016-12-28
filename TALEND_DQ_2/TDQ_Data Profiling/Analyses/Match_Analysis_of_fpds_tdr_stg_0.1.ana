@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_OaK8cM1GEeaK2JQVPLlP_Q" name="Match_Analysis of fpds_tdr_stg" creationDate="2016-12-28T16:40:17.233-0500">
+  <taggedValue xmi:id="_OaK8cc1GEeaK2JQVPLlP_Q" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_OaK8cs1GEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_OaK8c81GEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_OaK8dM1GEeaK2JQVPLlP_Q" tag="Purpose" value="PoC Match_Analysis of fpds_tdr_stg"/>
+  <taggedValue xmi:id="_OaK8dc1GEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_OaK8ds1GEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_OaK8d81GEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_OaK8eM1GEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_OaK8ec1GEeaK2JQVPLlP_Q"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_OaLjgM1GEeaK2JQVPLlP_Q"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_OaLjgc1GEeaK2JQVPLlP_Q">
+      <builtInMatchRuleDefinition xmi:id="_OaLjgs1GEeaK2JQVPLlP_Q"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_OaLjg81GEeaK2JQVPLlP_Q" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
