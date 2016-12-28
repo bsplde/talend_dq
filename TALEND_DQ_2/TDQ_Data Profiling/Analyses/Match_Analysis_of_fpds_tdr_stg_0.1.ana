@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_OaK8cM1GEeaK2JQVPLlP_Q" name="Match_Analysis of fpds_tdr_stg" creationDate="2016-12-28T16:40:17.233-0500" defaultContext="Default">
+  <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
   <taggedValue xmi:id="_OaK8cc1GEeaK2JQVPLlP_Q" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_OaK8cs1GEeaK2JQVPLlP_Q" tag="Status" value="development"/>
   <taggedValue xmi:id="_OaK8c81GEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
@@ -11,6 +12,7 @@
   <taggedValue xmi:id="_OrqVEs1GEeaK2JQVPLlP_Q" tag="STORE_ON_DISK" value="false"/>
   <taggedValue xmi:id="_POcSAc1GEeaK2JQVPLlP_Q" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
   <context xmi:id="_OaK8d81GEeaK2JQVPLlP_Q">
+    <connection href="../../metadata/connections/Redshift_EDW_0.1.item#_CWH4oMx-Eea2Ze65m8OESQ"/>
     <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbgQM0TEeaK2JQVPLlP_Q"/>
     <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_4bbgRM0TEeaK2JQVPLlP_Q"/>
   </context>
