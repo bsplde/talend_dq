@@ -13246,31 +13246,37 @@
       <ownedElement xsi:type="relational:TdTable" xmi:id="_HKej1s0TEeaK2JQVPLlP_Q" name="fpds_atom_vendor_summary" id="_HKejx80TEeaK2JQVPLlP_Q" label="fpds_atom_vendor_summary" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSQ8M0UEeaK2JQVPLlP_Q" name="row_num" id="row_num" label="row_num" length="19" sourceType="INT8" talendType="id_Long">
           <taggedValue xmi:id="_BvSQ8c0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsSqs0eEeaK2JQVPLlP_Q" tag="Content Type" value="Interval"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSQ8s0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSQ880UEeaK2JQVPLlP_Q" name="INT8" numericPrecisionRadix="10" javaDataType="-5" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSQ9M0UEeaK2JQVPLlP_Q" name="vendor_name" id="vendor_name" label="vendor_name" length="400" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_BvSQ9c0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsSt80eEeaK2JQVPLlP_Q" tag="Content Type" value="Nominal"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSQ9s0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSQ980UEeaK2JQVPLlP_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSQ-M0UEeaK2JQVPLlP_Q" name="vendor_duns_number" id="vendor_duns_number" label="vendor_duns_number" length="9" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_BvSQ-c0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsSxM0eEeaK2JQVPLlP_Q" tag="Content Type" value="Nominal"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSQ-s0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSQ-80UEeaK2JQVPLlP_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSQ_M0UEeaK2JQVPLlP_Q" name="department_id" id="department_id" label="department_id" length="10" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_BvSQ_c0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsS0c0eEeaK2JQVPLlP_Q" tag="Content Type" value="Nominal"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSQ_s0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSQ_80UEeaK2JQVPLlP_Q" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSRAM0UEeaK2JQVPLlP_Q" name="award_count" id="award_count" label="award_count" length="19" sourceType="INT8" talendType="id_Long">
           <taggedValue xmi:id="_BvSRAc0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsS3M0eEeaK2JQVPLlP_Q" tag="Content Type" value="Interval"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSRAs0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSRA80UEeaK2JQVPLlP_Q" name="INT8" numericPrecisionRadix="10" javaDataType="-5" nullable="columnNullable"/>
         </feature>
         <feature xsi:type="relational:TdColumn" xmi:id="_BvSRBM0UEeaK2JQVPLlP_Q" name="total_dollars_obligated" id="total_dollars_obligated" label="total_dollars_obligated" length="17" sourceType="FLOAT8" talendType="id_Double">
           <taggedValue xmi:id="_BvSRBc0UEeaK2JQVPLlP_Q" tag="Comment" value=""/>
+          <taggedValue xmi:id="_mDsS580eEeaK2JQVPLlP_Q" tag="Content Type" value="Interval"/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_BvSRBs0UEeaK2JQVPLlP_Q" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_BvSRB80UEeaK2JQVPLlP_Q" name="FLOAT8" numericPrecision="17" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
         </feature>
@@ -21924,5 +21930,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/log_contract_dim_err_log_0.1.ana#_Csf2MM0LEeaK2JQVPLlP_Q"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/fpds_award_atom_raw_0.1.ana#_T3YUMM0TEeaK2JQVPLlP_Q"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/fpds_delete_atom_raw_0.1.ana#_oqoOwM0VEeaK2JQVPLlP_Q"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/profiling_fpds_fpds_atom_vendor_summary_0.1.ana#_lvJmAM0eEeaK2JQVPLlP_Q"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
