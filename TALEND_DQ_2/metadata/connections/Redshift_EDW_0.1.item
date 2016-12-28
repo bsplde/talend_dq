@@ -464,7 +464,9 @@
       <ownedElement xsi:type="relational:TdTable" xmi:id="_qR7N5sx_Eea2Ze65m8OESQ" name="seventy_two_a_sales_tx" id="_qR6m1Mx_Eea2Ze65m8OESQ" label="seventy_two_a_sales_tx" tableType="TABLE"/>
     </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSH8x-Eea2Ze65m8OESQ" name="edw_stg_raw"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSIMx-Eea2Ze65m8OESQ" name="fpds"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSIMx-Eea2Ze65m8OESQ" name="fpds">
+      <ownedElement xsi:type="relational:TdView" xmi:id="_Gj7hIM0TEeaK2JQVPLlP_Q" name="view_fpds_tdr" label="view_fpds_tdr" tableType="VIEW"/>
+    </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSIcx-Eea2Ze65m8OESQ" name="fpds_atom_archive"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSIsx-Eea2Ze65m8OESQ" name="fpds_rama"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_g4iSI8x-Eea2Ze65m8OESQ" name="fpds_restricted"/>
