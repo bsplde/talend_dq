@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_T3YUMM0TEeaK2JQVPLlP_Q" name="fpds_award_atom_raw" creationDate="2016-12-28T10:35:49.382-0500">
+  <taggedValue xmi:id="_T3YUMc0TEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_T3YUMs0TEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_T3YUM80TEeaK2JQVPLlP_Q" tag="Purpose" value="Analyze or profile award atom raw table"/>
+  <taggedValue xmi:id="_T3YUNM0TEeaK2JQVPLlP_Q" tag="Description" value="Analyze or profile award atom raw table"/>
+  <taggedValue xmi:id="_T3YUNc0TEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_T3YUNs0TEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_T3YUN80TEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_T3YUOM0TEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_T3YUOc0TEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
