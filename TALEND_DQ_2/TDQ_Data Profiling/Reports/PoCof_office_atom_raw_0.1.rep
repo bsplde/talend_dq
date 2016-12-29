@@ -27,5 +27,6 @@
   <analysisMap xmi:id="_6n62gM3gEea0kP31H5tPLg" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
   </analysisMap>
+  <ExecInformations xmi:id="_BBUMEM3iEea0kP31H5tPLg" executionDate="2016-12-29T11:15:25.708-0500" executionDuration="3909" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
   <context xmi:id="_6n6PdM3gEea0kP31H5tPLg" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>

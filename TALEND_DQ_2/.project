@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.PoCof office_atom_raw-20161229-1115-00031.pdf</name>
+			<type>1</type>
+			<location>C:/Talend/PoCof office_atom_raw-20161229-1115-00031.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
