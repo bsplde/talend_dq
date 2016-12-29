@@ -636,6 +636,12 @@
       </indicators>
       <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_JQDaAM3gEea0kP31H5tPLg" name="US Zipcode Validation">
         <parameters xmi:id="_JQDaAc3gEea0kP31H5tPLg">
+          <indicatorValidDomain xmi:id="_NzTiwM3gEea0kP31H5tPLg" name="Indicator threshold">
+            <ranges xmi:id="_NzUJ0M3gEea0kP31H5tPLg" name="Percentage Threshold">
+              <lowerValue xsi:type="dataquality.domain:TextValue" xmi:id="_NzUJ0c3gEea0kP31H5tPLg" value="0.9"/>
+              <upperValue xsi:type="dataquality.domain:TextValue" xmi:id="_NzUJ0s3gEea0kP31H5tPLg" value="1.0"/>
+            </ranges>
+          </indicatorValidDomain>
           <dataValidDomain xmi:id="_JQDaAs3gEea0kP31H5tPLg">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
           </dataValidDomain>
