@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_rulqwM3gEea0kP31H5tPLg" name="PoCof office_atom_raw" creationDate="2016-12-29T11:05:56.480-0500">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_rulqwM3gEea0kP31H5tPLg" name="PoCof office_atom_raw" creationDate="2016-12-29T11:05:56.480-0500" defaultContext="Default">
+  <clientDependency href="../Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_6u1W0M3gEea0kP31H5tPLg"/>
   <taggedValue xmi:id="_rulqwc3gEea0kP31H5tPLg" tag="Status" value="development"/>
   <taggedValue xmi:id="_rulqws3gEea0kP31H5tPLg" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
-  <taggedValue xmi:id="_rulqw83gEea0kP31H5tPLg" tag="Purpose"/>
-  <taggedValue xmi:id="_rulqxM3gEea0kP31H5tPLg" tag="Description"/>
+  <taggedValue xmi:id="_rulqw83gEea0kP31H5tPLg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_rulqxM3gEea0kP31H5tPLg" tag="Description" value=""/>
   <taggedValue xmi:id="_rulqxc3gEea0kP31H5tPLg" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_rulqxs3gEea0kP31H5tPLg" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_rulqxs3gEea0kP31H5tPLg" tag="OutputFolder" value="C:\Talend"/>
   <taggedValue xmi:id="_rulqx83gEea0kP31H5tPLg" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
   <taggedValue xmi:id="_rulqyM3gEea0kP31H5tPLg" tag="REP_DBINFO_DBVERSION" value=""/>
   <taggedValue xmi:id="_rulqyc3gEea0kP31H5tPLg" tag="REP_DBINFO_HOST" value=""/>
@@ -14,8 +15,17 @@
   <taggedValue xmi:id="_rulqzM3gEea0kP31H5tPLg" tag="REP_DBINFO_SCHEMA" value=""/>
   <taggedValue xmi:id="_rulqzc3gEea0kP31H5tPLg" tag="REP_DBINFO_USER" value="sa"/>
   <taggedValue xmi:id="_rulqzs3gEea0kP31H5tPLg" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
-  <taggedValue xmi:id="_rulqz83gEea0kP31H5tPLg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Users\ssanthanam\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_rulqz83gEea0kP31H5tPLg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/C:\Users\ssanthanam\workspace\TDQ_reporting_db\talend_dq"/>
   <taggedValue xmi:id="_rulq0M3gEea0kP31H5tPLg" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
   <taggedValue xmi:id="_rulq0c3gEea0kP31H5tPLg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
   <taggedValue xmi:id="_rulq0s3gEea0kP31H5tPLg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_6n6PcM3gEea0kP31H5tPLg" tag="OutputFileName" value="PoCof office_atom_raw"/>
+  <taggedValue xmi:id="_6n6Pcc3gEea0kP31H5tPLg" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_6n6Pcs3gEea0kP31H5tPLg" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_6n6Pc83gEea0kP31H5tPLg" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_6n6Pdc3gEea0kP31H5tPLg" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <analysisMap xmi:id="_6n62gM3gEea0kP31H5tPLg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
+  </analysisMap>
+  <context xmi:id="_6n6PdM3gEea0kP31H5tPLg" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
