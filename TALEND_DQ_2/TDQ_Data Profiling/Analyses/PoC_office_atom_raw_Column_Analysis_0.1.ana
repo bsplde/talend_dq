@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_eA56IM3dEeaK2JQVPLlP_Q" name="PoC_office_atom_raw_Column_Analysis" creationDate="2016-12-29T10:37:11.665-0500">
+  <taggedValue xmi:id="_eA56Ic3dEeaK2JQVPLlP_Q" tag="Status" value="development"/>
+  <taggedValue xmi:id="_eA56Is3dEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_eA56I83dEeaK2JQVPLlP_Q" tag="Purpose"/>
+  <taggedValue xmi:id="_eA56JM3dEeaK2JQVPLlP_Q" tag="Description"/>
+  <taggedValue xmi:id="_eA56Jc3dEeaK2JQVPLlP_Q" tag="Version" value="0.1"/>
+  <context xmi:id="_eA56Js3dEeaK2JQVPLlP_Q"/>
+  <results xmi:id="_eA56J83dEeaK2JQVPLlP_Q">
+    <resultMetadata xmi:id="_eA56KM3dEeaK2JQVPLlP_Q"/>
+  </results>
+  <parameters xmi:id="_eA56Kc3dEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
