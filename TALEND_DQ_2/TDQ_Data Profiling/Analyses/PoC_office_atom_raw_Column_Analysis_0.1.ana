@@ -2,6 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_eA56IM3dEeaK2JQVPLlP_Q" name="PoC_office_atom_raw_Column_Analysis" creationDate="2016-12-29T10:37:11.665-0500" defaultContext="Default">
     <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_GGscYM3gEea0kP31H5tPLg"/>
     <taggedValue xmi:id="_eA56Ic3dEeaK2JQVPLlP_Q" tag="Status" value="development"/>
     <taggedValue xmi:id="_eA56Is3dEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
     <taggedValue xmi:id="_eA56I83dEeaK2JQVPLlP_Q" tag="Purpose" value=""/>
@@ -632,6 +633,15 @@
           <charactersMapping xmi:id="_jbxVh83fEea0kP31H5tPLg" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
           <charactersMapping xmi:id="_jbxViM3fEea0kP31H5tPLg" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
         </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_JQDaAM3gEea0kP31H5tPLg" name="US Zipcode Validation">
+        <parameters xmi:id="_JQDaAc3gEea0kP31H5tPLg">
+          <dataValidDomain xmi:id="_JQDaAs3gEea0kP31H5tPLg">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_n2tqUIybEd6Dle_8xC0lwg"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_54OOLM0TEeaK2JQVPLlP_Q"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_eaMkRs3dEeaK2JQVPLlP_Q" count="260190" nullCount="260190" computed="true">
         <parameters xmi:id="_eaMkR83dEeaK2JQVPLlP_Q"/>
