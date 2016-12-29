@@ -3,6 +3,7 @@
   <dataquality.analysis:Analysis xmi:id="_eA56IM3dEeaK2JQVPLlP_Q" name="PoC_office_atom_raw_Column_Analysis" supplierDependency="_6u1W0M3gEea0kP31H5tPLg" creationDate="2016-12-29T10:37:11.665-0500" defaultContext="Default">
     <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_GGscYM3gEea0kP31H5tPLg"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/US_Zipcode_Validation_0.1.pattern#_tLoRsM36Eea0kP31H5tPLg"/>
     <taggedValue xmi:id="_eA56Ic3dEeaK2JQVPLlP_Q" tag="Status" value="development"/>
     <taggedValue xmi:id="_eA56Is3dEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
     <taggedValue xmi:id="_eA56I83dEeaK2JQVPLlP_Q" tag="Purpose" value=""/>
@@ -27,7 +28,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_54O2D80TEeaK2JQVPLlP_Q"/>
     </context>
     <results xmi:id="_eA56J83dEeaK2JQVPLlP_Q">
-      <resultMetadata xmi:id="_eA56KM3dEeaK2JQVPLlP_Q" executionDate="2016-12-29T11:02:56.062-0500" executionDuration="5827" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <resultMetadata xmi:id="_eA56KM3dEeaK2JQVPLlP_Q" executionDate="2016-12-29T14:12:09.218-0500" executionDuration="4594" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_eaL81M3dEeaK2JQVPLlP_Q" count="260190" nullCount="177" computed="true">
         <parameters xmi:id="_eaL81c3dEeaK2JQVPLlP_Q"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Redshift_EDW_0.1.item#_54OOEM0TEeaK2JQVPLlP_Q"/>
@@ -1074,6 +1075,9 @@
     <parameters xmi:id="_eA56Kc3dEeaK2JQVPLlP_Q" dataFilter="_e2GcwM3dEeaK2JQVPLlP_Q" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_eaL80M3dEeaK2JQVPLlP_Q" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_6u1W0M3gEea0kP31H5tPLg" kind="Usage" supplier="_eA56IM3dEeaK2JQVPLlP_Q">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/PoCof_office_atom_raw_0.1.rep#_rulqwM3gEea0kP31H5tPLg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_e2GcwM3dEeaK2JQVPLlP_Q" name="PoC_office_atom_raw_Column_Analysis">
     <ranges xmi:id="_e2Gcwc3dEeaK2JQVPLlP_Q">
       <expressions xmi:id="_e2Gcws3dEeaK2JQVPLlP_Q">
@@ -1081,7 +1085,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_6u1W0M3gEea0kP31H5tPLg" kind="Usage" supplier="_eA56IM3dEeaK2JQVPLlP_Q">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/PoCof_office_atom_raw_0.1.rep#_rulqwM3gEea0kP31H5tPLg"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.domain.pattern:Pattern xmi:id="_n2tqUIybEd6Dle_8xC0lwg" name="US Zipcode Validation" supplierDependency="_GGscYM3gEea0kP31H5tPLg">
+  <dataquality.domain.pattern:Pattern xmi:id="_n2tqUIybEd6Dle_8xC0lwg" name="US Zipcode Validation" supplierDependency="_tLoRsM36Eea0kP31H5tPLg">
     <taggedValue xmi:id="_n2tqUYybEd6Dle_8xC0lwg" tag="Author" value="Amith"/>
     <taggedValue xmi:id="_n2tqUoybEd6Dle_8xC0lwg" tag="Description" value="Zipcode should be of 5 numerics"/>
     <taggedValue xmi:id="_n2tqU4ybEd6Dle_8xC0lwg" tag="Purpose" value="matches only if 5 numerics are presentnot matches if less than 5 numerics"/>
@@ -10,7 +10,10 @@
       <expression xmi:id="_n2tqV4ybEd6Dle_8xC0lwg" body="'^[0-9]{5}$'" language="SQL"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GGscYM3gEea0kP31H5tPLg" kind="Usage" supplier="_n2tqUIybEd6Dle_8xC0lwg">
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_GGscYM3gEea0kP31H5tPLg" kind="Usage">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_tLoRsM36Eea0kP31H5tPLg" kind="Usage" supplier="_n2tqUIybEd6Dle_8xC0lwg">
     <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
