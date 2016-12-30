@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_m2H8YM6jEea0kP31H5tPLg" name="PoC_fpds_Overall" creationDate="2016-12-30T10:21:15.471-0500">
+  <taggedValue xmi:id="_m2H8Yc6jEea0kP31H5tPLg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_m2H8Ys6jEea0kP31H5tPLg" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_m2H8Y86jEea0kP31H5tPLg" tag="Purpose"/>
+  <taggedValue xmi:id="_m2H8ZM6jEea0kP31H5tPLg" tag="Description"/>
+  <taggedValue xmi:id="_m2H8Zc6jEea0kP31H5tPLg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_m2H8Zs6jEea0kP31H5tPLg" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_m2H8Z86jEea0kP31H5tPLg" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
+  <taggedValue xmi:id="_m2H8aM6jEea0kP31H5tPLg" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
+  <taggedValue xmi:id="_m2H8ac6jEea0kP31H5tPLg" tag="REP_DBINFO_HOST" value="54.242.161.63"/>
+  <taggedValue xmi:id="_m2H8as6jEea0kP31H5tPLg" tag="REP_DBINFO_PORT" value="3306"/>
+  <taggedValue xmi:id="_m2H8a86jEea0kP31H5tPLg" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_m2H8bM6jEea0kP31H5tPLg" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_m2H8bc6jEea0kP31H5tPLg" tag="REP_DBINFO_USER" value="root"/>
+  <taggedValue xmi:id="_m2H8bs6jEea0kP31H5tPLg" tag="REP_DBINFO_PASSWORD" value="HQuLLSdck1jm5mjYYMPcQA=="/>
+  <taggedValue xmi:id="_m2H8b86jEea0kP31H5tPLg" tag="REP_DBINFO_URL" value="jdbc:mysql://54.242.161.63:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_m2H8cM6jEea0kP31H5tPLg" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
+  <taggedValue xmi:id="_m2H8cc6jEea0kP31H5tPLg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
+  <taggedValue xmi:id="_m2H8cs6jEea0kP31H5tPLg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+</dataquality.reports:TdReport>
