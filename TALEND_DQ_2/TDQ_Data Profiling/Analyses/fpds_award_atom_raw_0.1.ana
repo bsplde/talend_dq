@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_T3YUMM0TEeaK2JQVPLlP_Q" name="fpds_award_atom_raw" creationDate="2016-12-28T10:35:49.382-0500" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_T3YUMM0TEeaK2JQVPLlP_Q" name="fpds_award_atom_raw" supplierDependency="_x5eDIM6lEea0kP31H5tPLg" creationDate="2016-12-28T10:35:49.382-0500" defaultContext="Default">
     <clientDependency href="../../metadata/connections/Redshift_EDW_0.1.item#_DTdvkM0LEeaK2JQVPLlP_Q"/>
     <taggedValue xmi:id="_T3YUMc0TEeaK2JQVPLlP_Q" tag="Status" value="development"/>
     <taggedValue xmi:id="_T3YUMs0TEeaK2JQVPLlP_Q" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
@@ -12233,4 +12233,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_x5eDIM6lEea0kP31H5tPLg" kind="Usage" supplier="_T3YUMM0TEeaK2JQVPLlP_Q">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/PoC_fpds_Overall_0.1.rep#_m2H8YM6jEea0kP31H5tPLg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

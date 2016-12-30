@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_m2H8YM6jEea0kP31H5tPLg" name="PoC_fpds_Overall" creationDate="2016-12-30T10:21:15.471-0500">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_m2H8YM6jEea0kP31H5tPLg" name="PoC_fpds_Overall" creationDate="2016-12-30T10:21:15.471-0500" defaultContext="Default">
+  <clientDependency href="../Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_6u1W0M3gEea0kP31H5tPLg"/>
+  <clientDependency href="../Analyses/fpds_award_atom_raw_0.1.ana#_x5eDIM6lEea0kP31H5tPLg"/>
   <taggedValue xmi:id="_m2H8Yc6jEea0kP31H5tPLg" tag="Status" value="development"/>
   <taggedValue xmi:id="_m2H8Ys6jEea0kP31H5tPLg" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
-  <taggedValue xmi:id="_m2H8Y86jEea0kP31H5tPLg" tag="Purpose"/>
-  <taggedValue xmi:id="_m2H8ZM6jEea0kP31H5tPLg" tag="Description"/>
+  <taggedValue xmi:id="_m2H8Y86jEea0kP31H5tPLg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_m2H8ZM6jEea0kP31H5tPLg" tag="Description" value=""/>
   <taggedValue xmi:id="_m2H8Zc6jEea0kP31H5tPLg" tag="Version" value="0.1"/>
   <taggedValue xmi:id="_m2H8Zs6jEea0kP31H5tPLg" tag="OutputFolder" value=""/>
   <taggedValue xmi:id="_m2H8Z86jEea0kP31H5tPLg" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
@@ -18,4 +20,16 @@
   <taggedValue xmi:id="_m2H8cM6jEea0kP31H5tPLg" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
   <taggedValue xmi:id="_m2H8cc6jEea0kP31H5tPLg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
   <taggedValue xmi:id="_m2H8cs6jEea0kP31H5tPLg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_xxo80M6lEea0kP31H5tPLg" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_xxo80c6lEea0kP31H5tPLg" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_xxo80s6lEea0kP31H5tPLg" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_xxo8086lEea0kP31H5tPLg" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_xxo81c6lEea0kP31H5tPLg" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <analysisMap xmi:id="_xxo81s6lEea0kP31H5tPLg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
+  </analysisMap>
+  <analysisMap xmi:id="_xxo8186lEea0kP31H5tPLg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/fpds_award_atom_raw_0.1.ana#_T3YUMM0TEeaK2JQVPLlP_Q"/>
+  </analysisMap>
+  <context xmi:id="_xxo81M6lEea0kP31H5tPLg" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
