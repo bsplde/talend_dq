@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_Ny81ENLQEeapNOm3U25JeQ" name="sample" creationDate="2017-01-04T17:50:39.172-0500">
+  <taggedValue xmi:id="_Ny81EdLQEeapNOm3U25JeQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Ny81EtLQEeapNOm3U25JeQ" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_Ny81E9LQEeapNOm3U25JeQ" tag="Purpose"/>
+  <taggedValue xmi:id="_Ny81FNLQEeapNOm3U25JeQ" tag="Description"/>
+  <taggedValue xmi:id="_Ny81FdLQEeapNOm3U25JeQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_Ny81FtLQEeapNOm3U25JeQ" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_Ny81F9LQEeapNOm3U25JeQ" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
+  <taggedValue xmi:id="_Ny81GNLQEeapNOm3U25JeQ" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
+  <taggedValue xmi:id="_Ny81GdLQEeapNOm3U25JeQ" tag="REP_DBINFO_HOST" value="54.242.161.63"/>
+  <taggedValue xmi:id="_Ny81GtLQEeapNOm3U25JeQ" tag="REP_DBINFO_PORT" value="3306"/>
+  <taggedValue xmi:id="_Ny81G9LQEeapNOm3U25JeQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_Ny81HNLQEeapNOm3U25JeQ" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_Ny81HdLQEeapNOm3U25JeQ" tag="REP_DBINFO_USER" value="root"/>
+  <taggedValue xmi:id="_Ny81HtLQEeapNOm3U25JeQ" tag="REP_DBINFO_PASSWORD" value="HQuLLSdck1jm5mjYYMPcQA=="/>
+  <taggedValue xmi:id="_Ny81H9LQEeapNOm3U25JeQ" tag="REP_DBINFO_URL" value="jdbc:mysql://54.242.161.63:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_Ny81INLQEeapNOm3U25JeQ" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
+  <taggedValue xmi:id="_Ny81IdLQEeapNOm3U25JeQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
+  <taggedValue xmi:id="_Ny81ItLQEeapNOm3U25JeQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
+</dataquality.reports:TdReport>
