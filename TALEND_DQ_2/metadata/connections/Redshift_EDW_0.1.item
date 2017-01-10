@@ -22429,5 +22429,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/PoC_office_atom_raw_Column_Analysis_0.1.ana#_eA56IM3dEeaK2JQVPLlP_Q"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample_0.1.ana#_fhGcQNHoEea6N5jgh0rj5g"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample1_0.1.ana#_WiLQsNaOEeaD1-MaeW_7VQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample_Dem_0.1.ana#_cd-S8NdNEea4q5oyLn-xeA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
