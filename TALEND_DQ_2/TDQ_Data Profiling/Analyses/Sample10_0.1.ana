@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_rFejcNhAEea8EMjupHNxrA" name="Sample10" creationDate="2017-01-11T15:58:15.111-0500">
+  <taggedValue xmi:id="_rFejcdhAEea8EMjupHNxrA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_rFejcthAEea8EMjupHNxrA" tag="Author" value="shaunak.ashtaputre@karsun-llc.com"/>
+  <taggedValue xmi:id="_rFejc9hAEea8EMjupHNxrA" tag="Purpose"/>
+  <taggedValue xmi:id="_rFejdNhAEea8EMjupHNxrA" tag="Description"/>
+  <taggedValue xmi:id="_rFejddhAEea8EMjupHNxrA" tag="Version" value="0.1"/>
+  <context xmi:id="_rFejdthAEea8EMjupHNxrA"/>
+  <results xmi:id="_rFfKgNhAEea8EMjupHNxrA">
+    <resultMetadata xmi:id="_rFfKgdhAEea8EMjupHNxrA"/>
+  </results>
+  <parameters xmi:id="_rFfKgthAEea8EMjupHNxrA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
