@@ -22430,5 +22430,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample_0.1.ana#_fhGcQNHoEea6N5jgh0rj5g"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample1_0.1.ana#_WiLQsNaOEeaD1-MaeW_7VQ"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample_Dem_0.1.ana#_cd-S8NdNEea4q5oyLn-xeA"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Sample10_0.1.ana#_rFejcNhAEea8EMjupHNxrA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
