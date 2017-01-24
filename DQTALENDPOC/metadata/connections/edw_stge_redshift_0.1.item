@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_JiRLgOJREeaVtuZI3iSZWg" name="edw_stge_redshift" id="_9Z65oOJQEeaVtuZI3iSZWg" label="edw_stge_redshift" dataPackage="_Ju6gYOJREeaVtuZI3iSZWg" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" dbVersionString="SAS_9.1" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_JiRLgeJREeaVtuZI3iSZWg" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_JoB1QOJREeaVtuZI3iSZWg" tag="package filter" value=""/>
@@ -20,7 +20,9 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uguJREeaVtuZI3iSZWg" name="dds"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ug-JREeaVtuZI3iSZWg" name="demo"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhOJREeaVtuZI3iSZWg" name="edw_stg_raw"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uheJREeaVtuZI3iSZWg" name="fpds"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uheJREeaVtuZI3iSZWg" name="fpds">
+      <ownedElement xsi:type="relational:TdView" xmi:id="_SmhS4OJUEeaHwaEQ-_a8XA" name="view_fpds_tdr" label="view_fpds_tdr" tableType="VIEW"/>
+    </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhuJREeaVtuZI3iSZWg" name="fpds_atom_archive"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uh-JREeaVtuZI3iSZWg" name="fpds_rama"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uiOJREeaVtuZI3iSZWg" name="fpds_restricted"/>
