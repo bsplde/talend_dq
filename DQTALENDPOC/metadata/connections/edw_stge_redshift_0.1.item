@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_JiRLgOJREeaVtuZI3iSZWg" name="edw_stge_redshift" id="_9Z65oOJQEeaVtuZI3iSZWg" label="edw_stge_redshift" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" dbVersionString="SAS_9.1" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
-  <taggedValue xmi:id="_JiRLgeJREeaVtuZI3iSZWg" tag="Is Conn Need Reload" value="true"/>
-  <parameters xmi:id="_JiRLguJREeaVtuZI3iSZWg" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
-</TalendMetadata:DatabaseConnection>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_JiRLgOJREeaVtuZI3iSZWg" name="edw_stge_redshift" id="_9Z65oOJQEeaVtuZI3iSZWg" label="edw_stge_redshift" dataPackage="_Ju6gYOJREeaVtuZI3iSZWg" DatabaseType="Redshift" DriverClass="com.amazon.redshift.jdbc41.Driver" URL="jdbc:redshift://bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com:5439/edw" dbVersionString="SAS_9.1" Port="5439" Username="sureshs" Password="rLVGH6rAazl2TNGAUHKUgspKE3a2s1NM" ServerName="bsp-edw-stg2.cq3b8ry30tsc.us-east-1.redshift.amazonaws.com" DatasourceName="" FileFieldName="" SID="edw" SqlSynthax="SQL Syntax" DbmsId="redshift_id" ProductId="REDSHIFT" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_JiRLgeJREeaVtuZI3iSZWg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_JoB1QOJREeaVtuZI3iSZWg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_JoKYIOJREeaVtuZI3iSZWg" tag="Status" value=""/>
+    <taggedValue xmi:id="_JoKYIeJREeaVtuZI3iSZWg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_JoK_MOJREeaVtuZI3iSZWg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_JoK_MeJREeaVtuZI3iSZWg" tag="Description" value=""/>
+    <taggedValue xmi:id="_JoK_MuJREeaVtuZI3iSZWg" tag="Author" value=""/>
+    <taggedValue xmi:id="_JoK_M-JREeaVtuZI3iSZWg" tag="otherParameter"/>
+    <taggedValue xmi:id="_JrL28OJREeaVtuZI3iSZWg" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_JrMeAOJREeaVtuZI3iSZWg" tag="DB ProductVersion" value="08.00.0002"/>
+    <taggedValue xmi:id="_JrMeAeJREeaVtuZI3iSZWg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_JiRLguJREeaVtuZI3iSZWg" key="CONN_PARA_KEY_USERNAME" value="sureshs"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Ju6gYOJREeaVtuZI3iSZWg" name="edw" dataManager="_JiRLgOJREeaVtuZI3iSZWg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ugOJREeaVtuZI3iSZWg" name="asap_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ugeJREeaVtuZI3iSZWg" name="daily_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uguJREeaVtuZI3iSZWg" name="dds"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ug-JREeaVtuZI3iSZWg" name="demo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhOJREeaVtuZI3iSZWg" name="edw_stg_raw"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uheJREeaVtuZI3iSZWg" name="fpds"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhuJREeaVtuZI3iSZWg" name="fpds_atom_archive"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uh-JREeaVtuZI3iSZWg" name="fpds_rama"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uiOJREeaVtuZI3iSZWg" name="fpds_restricted"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uieJREeaVtuZI3iSZWg" name="gss"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uiuJREeaVtuZI3iSZWg" name="gwcm"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ui-JREeaVtuZI3iSZWg" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ujOJREeaVtuZI3iSZWg" name="log"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ujeJREeaVtuZI3iSZWg" name="market"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ujuJREeaVtuZI3iSZWg" name="mdt"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uj-JREeaVtuZI3iSZWg" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ukOJREeaVtuZI3iSZWg" name="pg_internal"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ukeJREeaVtuZI3iSZWg" name="prd"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ukuJREeaVtuZI3iSZWg" name="public"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uk-JREeaVtuZI3iSZWg" name="stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7ulOJREeaVtuZI3iSZWg" name="tdr"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uleJREeaVtuZI3iSZWg" name="tdr_stg"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uluJREeaVtuZI3iSZWg" name="tmp"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
