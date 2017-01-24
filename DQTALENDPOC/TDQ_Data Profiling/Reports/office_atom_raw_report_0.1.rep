@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_cdpTkOJVEeaHwaEQ-_a8XA" name="office_atom_raw_report" creationDate="2017-01-24T11:52:08.410-0500">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_cdpTkOJVEeaHwaEQ-_a8XA" name="office_atom_raw_report" creationDate="2017-01-24T11:52:08.410-0500" defaultContext="Default">
+  <clientDependency href="../Analyses/office_atom_raw_0.1.ana#_haAf4OJVEeaHwaEQ-_a8XA"/>
   <taggedValue xmi:id="_cdpTkeJVEeaHwaEQ-_a8XA" tag="Status" value="development"/>
   <taggedValue xmi:id="_cdpTkuJVEeaHwaEQ-_a8XA" tag="Author" value="suresh.santhanam@karsun-llc.com"/>
-  <taggedValue xmi:id="_cdpTk-JVEeaHwaEQ-_a8XA" tag="Purpose"/>
-  <taggedValue xmi:id="_cdpTlOJVEeaHwaEQ-_a8XA" tag="Description"/>
+  <taggedValue xmi:id="_cdpTk-JVEeaHwaEQ-_a8XA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_cdpTlOJVEeaHwaEQ-_a8XA" tag="Description" value=""/>
   <taggedValue xmi:id="_cdpTleJVEeaHwaEQ-_a8XA" tag="Version" value="0.1"/>
   <taggedValue xmi:id="_cdpTluJVEeaHwaEQ-_a8XA" tag="OutputFolder" value=""/>
   <taggedValue xmi:id="_cdpTl-JVEeaHwaEQ-_a8XA" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
@@ -18,4 +19,13 @@
   <taggedValue xmi:id="_cdpToOJVEeaHwaEQ-_a8XA" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
   <taggedValue xmi:id="_cdpToeJVEeaHwaEQ-_a8XA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
   <taggedValue xmi:id="_cdpTouJVEeaHwaEQ-_a8XA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_hSWYsOJVEeaHwaEQ-_a8XA" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_hSWYseJVEeaHwaEQ-_a8XA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_hSWYsuJVEeaHwaEQ-_a8XA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_hSWYs-JVEeaHwaEQ-_a8XA" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_hSW_weJVEeaHwaEQ-_a8XA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <analysisMap xmi:id="_hSYN4OJVEeaHwaEQ-_a8XA" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/office_atom_raw_0.1.ana#_XI-xcOJUEeaHwaEQ-_a8XA"/>
+  </analysisMap>
+  <context xmi:id="_hSW_wOJVEeaHwaEQ-_a8XA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
