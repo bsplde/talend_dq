@@ -22,6 +22,21 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhOJREeaVtuZI3iSZWg" name="edw_stg_raw"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uheJREeaVtuZI3iSZWg" name="fpds">
       <ownedElement xsi:type="relational:TdView" xmi:id="_SmhS4OJUEeaHwaEQ-_a8XA" name="view_fpds_tdr" label="view_fpds_tdr" tableType="VIEW"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMpuJUEeaHwaEQ-_a8XA" name="award_atom_raw" id="_S4elkOJUEeaHwaEQ-_a8XA" label="award_atom_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMp-JUEeaHwaEQ-_a8XA" name="award_atom_raw_max_lmd" id="_S4elkeJUEeaHwaEQ-_a8XA" label="award_atom_raw_max_lmd" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMqOJUEeaHwaEQ-_a8XA" name="award_atom_stg" id="_S4elkuJUEeaHwaEQ-_a8XA" label="award_atom_stg" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMqeJUEeaHwaEQ-_a8XA" name="delete_atom_raw" id="_S4elk-JUEeaHwaEQ-_a8XA" label="delete_atom_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMquJUEeaHwaEQ-_a8XA" name="fpds_atom" id="_S4ellOJUEeaHwaEQ-_a8XA" label="fpds_atom" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMq-JUEeaHwaEQ-_a8XA" name="fpds_atom_original" id="_S4elleJUEeaHwaEQ-_a8XA" label="fpds_atom_original" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMrOJUEeaHwaEQ-_a8XA" name="fpds_atom_stg" id="_S4elluJUEeaHwaEQ-_a8XA" label="fpds_atom_stg" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMreJUEeaHwaEQ-_a8XA" name="fpds_atom_vendor_summary" id="_S4ell-JUEeaHwaEQ-_a8XA" label="fpds_atom_vendor_summary" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMruJUEeaHwaEQ-_a8XA" name="fpds_award_stg_insert_only" id="_S4elmOJUEeaHwaEQ-_a8XA" label="fpds_award_stg_insert_only" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMr-JUEeaHwaEQ-_a8XA" name="fpds_idv_stg_insert_only" id="_S4fMoOJUEeaHwaEQ-_a8XA" label="fpds_idv_stg_insert_only" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMsOJUEeaHwaEQ-_a8XA" name="fpds_tdr" id="_S4fMoeJUEeaHwaEQ-_a8XA" label="fpds_tdr" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMseJUEeaHwaEQ-_a8XA" name="fpds_tdr_stg" id="_S4fMouJUEeaHwaEQ-_a8XA" label="fpds_tdr_stg" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMsuJUEeaHwaEQ-_a8XA" name="idv_atom_raw" id="_S4fMo-JUEeaHwaEQ-_a8XA" label="idv_atom_raw" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMs-JUEeaHwaEQ-_a8XA" name="idv_atom_stg" id="_S4fMpOJUEeaHwaEQ-_a8XA" label="idv_atom_stg" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_S4fMtOJUEeaHwaEQ-_a8XA" name="office_atom_raw" id="_S4fMpeJUEeaHwaEQ-_a8XA" label="office_atom_raw" tableType="TABLE"/>
     </ownedElement>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uhuJREeaVtuZI3iSZWg" name="fpds_atom_archive"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Ju7uh-JREeaVtuZI3iSZWg" name="fpds_rama"/>
