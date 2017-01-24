@@ -27,5 +27,6 @@
   <analysisMap xmi:id="_hSYN4OJVEeaHwaEQ-_a8XA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/office_atom_raw_0.1.ana#_XI-xcOJUEeaHwaEQ-_a8XA"/>
   </analysisMap>
+  <ExecInformations xmi:id="_kGtWsOJVEeaHwaEQ-_a8XA" executionDate="2017-01-24T11:53:01.099-0500" executionDuration="9390" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
   <context xmi:id="_hSW_wOJVEeaHwaEQ-_a8XA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>

@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.office_atom_raw_report-20170124-1153-00022.pdf</name>
+			<type>1</type>
+			<location>C:/Users/ssanthanam/workspace/.repositories/1269217923/master/DQTALENDPOC/TDQ_Data Profiling/Reports/.office_atom_raw_report_0.1/office_atom_raw_report-20170124-1153-00022.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>

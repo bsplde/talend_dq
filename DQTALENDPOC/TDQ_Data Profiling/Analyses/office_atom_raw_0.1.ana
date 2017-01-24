@@ -98,7 +98,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/edw_stge_redshift_0.1.item#_T-jc_-JUEeaHwaEQ-_a8XA"/>
     </context>
     <results xmi:id="_XI-xd-JUEeaHwaEQ-_a8XA">
-      <resultMetadata xmi:id="_XI-xeOJUEeaHwaEQ-_a8XA" executionDate="2017-01-24T11:45:24.127-0500" executionDuration="186101" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_XI-xeOJUEeaHwaEQ-_a8XA" executionDate="2017-01-24T11:53:01.106-0500" executionDuration="9382" message="" executionNumber="3" lastRunOk="true" lastExecutionNumberOk="3"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Xqm30OJUEeaHwaEQ-_a8XA" count="260190" nullCount="177" computed="true">
         <parameters xmi:id="_Xqm30eJUEeaHwaEQ-_a8XA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/edw_stge_redshift_0.1.item#_T-hnoOJUEeaHwaEQ-_a8XA"/>
@@ -6946,6 +6946,9 @@
     <parameters xmi:id="_XI-xeeJUEeaHwaEQ-_a8XA" dataFilter="_X9rk0OJUEeaHwaEQ-_a8XA" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_XqlCoOJUEeaHwaEQ-_a8XA" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_haAf4OJVEeaHwaEQ-_a8XA" kind="Usage" supplier="_XI-xcOJUEeaHwaEQ-_a8XA">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/office_atom_raw_report_0.1.rep#_cdpTkOJVEeaHwaEQ-_a8XA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_X9rk0OJUEeaHwaEQ-_a8XA" name="office_atom_raw">
     <ranges xmi:id="_X9rk0eJUEeaHwaEQ-_a8XA">
       <expressions xmi:id="_X9sL4OJUEeaHwaEQ-_a8XA">
@@ -6953,7 +6956,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_haAf4OJVEeaHwaEQ-_a8XA" kind="Usage" supplier="_XI-xcOJUEeaHwaEQ-_a8XA">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/office_atom_raw_report_0.1.rep#_cdpTkOJVEeaHwaEQ-_a8XA"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
