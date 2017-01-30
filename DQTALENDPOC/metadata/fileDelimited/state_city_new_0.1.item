@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="__NvSYOcLEeafVM81OdBYaQ" name="state_city_new" dataPackage="__NvSYecLEeafVM81OdBYaQ" Server="Localhost 127.0.0.1" FilePath="C:/Talend/dsc/state_city_new.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="__NvSYecLEeafVM81OdBYaQ" name="default" dataManager="__NvSYOcLEeafVM81OdBYaQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__NvSYucLEeafVM81OdBYaQ" id="_2ZQlAOcLEeafVM81OdBYaQ" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__NvSY-cLEeafVM81OdBYaQ" label="State" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__NvSY-cLEeafVM81OdBYaQ" label="State_Name_Lookup" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__NvSZOcLEeafVM81OdBYaQ" label="State_ID" length="2" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__NvSZecLEeafVM81OdBYaQ" label="Capital_City" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
