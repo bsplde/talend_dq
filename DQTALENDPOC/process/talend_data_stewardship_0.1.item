@@ -724,7 +724,7 @@
         <mapperTableEntries name="office_id" expression="row1.office_id " type="id_String" nullable="true"/>
         <mapperTableEntries name="office_name" expression="row1.office_name " type="id_String" nullable="true"/>
         <mapperTableEntries name="hier_dept_org_cat_desc" expression="row1.hier_dept_org_cat_desc " type="id_String" nullable="true"/>
-        <mapperTableEntries name="State_1" expression="row2.State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="State_1" expression="row2.State_Name_Lookup" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="BadData" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="street_address" expression="row1.street_address " type="id_String" nullable="true"/>
