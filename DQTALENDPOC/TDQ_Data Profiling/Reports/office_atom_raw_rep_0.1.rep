@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_qNRhwOJUEeaHwaEQ-_a8XA" name="office_atom_raw_rep" creationDate="2017-01-24T11:46:29.655-0500">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_qNRhwOJUEeaHwaEQ-_a8XA" name="office_atom_raw_rep" creationDate="2017-01-24T11:46:29.655-0500" defaultContext="Default">
   <taggedValue xmi:id="_qNRhweJUEeaHwaEQ-_a8XA" tag="Status" value="development"/>
   <taggedValue xmi:id="_qNRhwuJUEeaHwaEQ-_a8XA" tag="Author" value="suresh.santhanam@karsun-llc.com"/>
-  <taggedValue xmi:id="_qNRhw-JUEeaHwaEQ-_a8XA" tag="Purpose"/>
-  <taggedValue xmi:id="_qNRhxOJUEeaHwaEQ-_a8XA" tag="Description"/>
+  <taggedValue xmi:id="_qNRhw-JUEeaHwaEQ-_a8XA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_qNRhxOJUEeaHwaEQ-_a8XA" tag="Description" value=""/>
   <taggedValue xmi:id="_qNRhxeJUEeaHwaEQ-_a8XA" tag="Version" value="0.1"/>
   <taggedValue xmi:id="_qNRhxuJUEeaHwaEQ-_a8XA" tag="OutputFolder" value=""/>
   <taggedValue xmi:id="_qNRhx-JUEeaHwaEQ-_a8XA" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
@@ -18,4 +18,10 @@
   <taggedValue xmi:id="_qNRh0OJUEeaHwaEQ-_a8XA" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
   <taggedValue xmi:id="_qNRh0eJUEeaHwaEQ-_a8XA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
   <taggedValue xmi:id="_qNRh0uJUEeaHwaEQ-_a8XA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_PIeIkOJdEeaHwaEQ-_a8XA" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_PIeIkeJdEeaHwaEQ-_a8XA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_PIeIkuJdEeaHwaEQ-_a8XA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_PIeIk-JdEeaHwaEQ-_a8XA" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_PIevoeJdEeaHwaEQ-_a8XA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_PIevoOJdEeaHwaEQ-_a8XA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
