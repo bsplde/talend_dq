@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_HA0iQOcOEeafVM81OdBYaQ" name="MySQL_RDS" id="_qQzTgOcNEeafVM81OdBYaQ" label="MySQL_RDS" dataPackage="_HFe_0OcOEeafVM81OdBYaQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://tac-talend1.cwbhypjuzh4o.us-east-1.rds.amazonaws.com:3306/gettingstarted?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="bspmaster" Password="FRHpR2iHWEKtFMqdAoTrv4DJ+qSfch/O" ServerName="tac-talend1.cwbhypjuzh4o.us-east-1.rds.amazonaws.com" DatasourceName="" FileFieldName="" SID="gettingstarted" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_HA0iQecOEeafVM81OdBYaQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_HBWGsOcOEeafVM81OdBYaQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_HBepkOcOEeafVM81OdBYaQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_HBepkecOEeafVM81OdBYaQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_HBepkucOEeafVM81OdBYaQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_HBepk-cOEeafVM81OdBYaQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_HBeplOcOEeafVM81OdBYaQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_HBeplecOEeafVM81OdBYaQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_HDLSsOcOEeafVM81OdBYaQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_HDLSsecOEeafVM81OdBYaQ" tag="DB ProductVersion" value="5.7.10-log"/>
+    <taggedValue xmi:id="_HDL5wOcOEeafVM81OdBYaQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_HA0iQucOEeafVM81OdBYaQ" key="CONN_PARA_KEY_USERNAME" value="bspmaster"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_HFe_0OcOEeafVM81OdBYaQ" name="gettingstarted" dataManager="_HA0iQOcOEeafVM81OdBYaQ"/>
+</xmi:XMI>
