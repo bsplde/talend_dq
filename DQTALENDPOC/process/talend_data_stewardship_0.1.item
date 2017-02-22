@@ -109,7 +109,7 @@
     <routinesParameter id="_w_G-wOJQEeaVtuZI3iSZWg" name="TalendDate"/>
     <routinesParameter id="_w_agwOJQEeaVtuZI3iSZWg" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HKBT0OcJEeafVM81OdBYaQ" show="false"/>
@@ -673,7 +673,19 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataprepRun_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://http://184.72.167.3:8080/org.talend.administrator&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;suresh.santhanam@karsun-llc.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE="/>
+    <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PREPARATION_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
+    <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDataprepRun_1"/>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -710,7 +722,7 @@
       <column comment="" key="false" length="-1" name="Source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="GoodData">
         <mapperTableEntries name="street_address" expression="row1.street_address " type="id_String" nullable="true"/>
@@ -737,94 +749,7 @@
         <mapperTableEntries name="isTarget" expression="false" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="Source" expression="&quot;file&quot;" type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="street_address" type="id_String" nullable="true"/>
-        <mapperTableEntries name="street_address_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="street_address_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="city" type="id_String" nullable="true"/>
-        <mapperTableEntries name="state" type="id_String" nullable="true"/>
-        <mapperTableEntries name="state_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="province" type="id_String" nullable="true"/>
-        <mapperTableEntries name="zip_code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="zip_code_county" type="id_String" nullable="true"/>
-        <mapperTableEntries name="zip_code_city" type="id_String" nullable="true"/>
-        <mapperTableEntries name="country_code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="country_code_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="government_office_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="government_office_id_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="office_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="office_id_region_code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="office_id_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agency_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agency_id_department_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agency_id_department_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agency_id_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="office_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agency_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="region_code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func1_dim_name_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func1_dim_value_id_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func1_dim_value_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func2_dim_name_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func2_dim_value_id_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func2_dim_value_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func3_dim_name_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func3_dim_value_id_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="func3_dim_value_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="parent_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="parent_org_code" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_dept_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_dept_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_dept_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_dept_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_dept_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_agency_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_agency_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_agency_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_agency_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_agency_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_macom_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_macom_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_macom_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_macom_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_macom_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom1_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom1_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom1_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom1_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom1_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom2_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom2_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom2_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom2_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom2_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom3_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom3_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom3_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom3_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom3_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom4_org" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom4_org_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom4_org_cat_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom4_org_cat_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_subcom4_org_desc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_start_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="hier_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="is_contracting_office" type="id_String" nullable="true"/>
-        <mapperTableEntries name="contracting_office_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="contracting_office_id_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="contracting_office_start_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="contracting_office_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="administrators" type="id_String" nullable="true"/>
-        <mapperTableEntries name="start_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="created_by" type="id_String" nullable="true"/>
-        <mapperTableEntries name="created_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="last_modified_by" type="id_String" nullable="true"/>
-        <mapperTableEntries name="last_modified_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Column84" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Column85" type="id_String" nullable="true"/>
-      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE"/>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="State_Name_Lookup" type="id_String" nullable="true"/>
         <mapperTableEntries name="State_ID" expression="row1.state " type="id_String" nullable="true" operator="="/>
@@ -832,7 +757,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__NurUOcLEeafVM81OdBYaQ" show="false"/>
@@ -898,7 +823,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_qQzTgOcNEeafVM81OdBYaQ" show="false"/>
@@ -1017,7 +942,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tStewardshipTaskOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
+  <node componentName="tStewardshipTaskOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStewardshipTaskOutput_1" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;http://54.243.19.157:8080/org.talend.datastewardship/services/dsctaskloader&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
@@ -1063,9 +988,13 @@
       <column comment="" key="false" length="-1" name="Source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDataprepRun_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDataprepRun_1" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="GoodData" lineStyle="0" metaname="GoodData" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tMysqlOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
